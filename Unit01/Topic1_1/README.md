@@ -21,6 +21,7 @@ Notes:
 Must have Class Declaration and Method
 ```
     public class (FileName){
+
         public static void main(String[] args) {
 
         }
