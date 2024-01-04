@@ -27,4 +27,4 @@ public class (FileName){
         }
     }
 ```
-All code must be in Main
+All code must be in Main /\
