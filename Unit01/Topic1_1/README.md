@@ -20,9 +20,9 @@ Sorry about the more complicated syntax for running the code from the command li
 Notes:
 Must have Class Declaration and Method
 ```
-    public class (FileName){
+public class (FileName){
 
-        public static void main(String[] args) {
+      public static void main(String[] args) {
 
         }
     }
