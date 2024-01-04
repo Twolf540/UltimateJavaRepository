@@ -16,3 +16,12 @@ java Unit01.Topic1_1.Main
 ```
 
 Sorry about the more complicated syntax for running the code from the command line; it's a necessary Java thing if you're going to keep your code organized in a big repository like this.
+
+Notes:
+Must have Class Declaration and Method
+    **public class (FileName){
+        public static void main(String[] args) {
+
+        }
+    }**
+All code must be in Main
