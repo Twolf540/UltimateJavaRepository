@@ -7,6 +7,7 @@ Booleans - True or false(1 or 0)
 Doubles - Represent "floating point" numbers - decimals
 Strings - Represent lines of text
 
+**1_2 P2**
 Variables
 A value that a "memory location"(string of letters, digits, underscore)
 Can't start with a digit
