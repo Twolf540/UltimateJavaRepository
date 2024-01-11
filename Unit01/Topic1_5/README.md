@@ -22,3 +22,11 @@ int negInt = Integer.MIN_VALUE;
 ```
 Adding to MAX_VALUE or subtracting from MIN_VALUE will make the int roll over
     ex - (MIN_VALUE - 1) = 2147483647
+
+Assigning the value of operations using two integers that result in a double to an int will automatically cast the value
+```
+int value = 1;
+int value2 = (value / 2);
+System.out.println(value2);
+```
+/\This will output 0 instead of 0.5, as the 0.5 is automatically cast, rounding it.
