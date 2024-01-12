@@ -1,5 +1,5 @@
 # 1.3 Expressions and Assignment Statements
-**1_3 P1**
+### 1_3 P1
 Literals and String Literals are different
 Arithmetic operators
 + addition
@@ -9,12 +9,13 @@ Arithmetic operators
 % modulus - gives remainder of division problem
 Operations **always** result in biggest data type
 ```
-System.out.print(3+4.30);
+System.out.print(3+4.0);
 ```
 /\ Outputs 7.0
 
-**1_3 P1**
+### 1_3 P2
 () takes precedence over &,/,* take precedence over +,-
 Variables can be used in place of numbers
 
+### 1_3 P3
 
