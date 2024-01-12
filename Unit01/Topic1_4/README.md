@@ -21,3 +21,12 @@ System.out.print(x);
 /\ Outputs 5
 
 ## 1_4 P3
+Description:
++ Defines the integer variable x, assigns the value of x as 23
++ Defines the integer variable y, assigns the value of y as 17
++ Multiplies the current value of x by 4 and assigns it to x
++ Adds 1 to the current value of y and assigns it to y
++ Divides the current value of x by 3 and assigns it to x
++ Subtracts 9 from the current value of y and assigns it to y
++ Finds the remainder of the current value of x divided by the current value of y and assigns it to x
++ Displays the current value of x
