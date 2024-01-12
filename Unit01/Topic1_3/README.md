@@ -9,7 +9,7 @@ Arithmetic operators
 + (/) division
 + (%) modulus - gives remainder of division problem
 
-Operations go from left to right
+Operations **always** go from left to right
 
 Operations **always** result in biggest data type
 ```
