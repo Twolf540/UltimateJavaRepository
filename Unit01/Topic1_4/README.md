@@ -30,4 +30,3 @@ Description:
 + Subtracts 9 from the current value of y and assigns it to y
 + Finds the remainder of the current value of x divided by the current value of y and assigns it to x
 + Displays the current value of x
-h
