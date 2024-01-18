@@ -3,10 +3,17 @@
 + Constructors are used to initialize the attributes for an object
 
 ```
-public Person(String nm, int ag, boolean ad) {
-    name = nm;
-    age = ag;
-    isAdult = ad;
+public Class Person
+{
+    private string nm;
+    private int ag;
+    private boolean ad;
+
+    public Person(String nm, int ag, boolean ad) {
+        name = nm;
+        age = ag;
+        isAdult = ad;
+    }
 }
 ```
 To create an object, you use "**new**" followed by the class name
