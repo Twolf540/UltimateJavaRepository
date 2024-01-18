@@ -36,11 +36,12 @@
 
 ### January
 
-| Mon                                                       | Tue                     | Wed                                                      | Thu                                                        | Fri                                                                   |
-| --------------------------------------------------------- | ----------------------- | -------------------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------- |
-| **1**                                                     | **2**                   | **3** <br> Install Java on computers                     | **4** <br> Sign up for Github / AP Classroom               | **5** <br> SNOW DAY                                                   |
-| **8** <br> Videos & MCQs on 1.1 <br> Videos & MCQs on 1.2 | **9** <br> SNOW DAY     | **10** <br> Videos & MCQ on 1.3 <br> Videos & MCQ on 1.4 | **11** <br> Vides & MCQ on 1.5 <br> Command line arguments | **12** <br> Catch up on videos/MCQs <br> Command line args assignment |
-| **15** <br> MLK Day                                       | **16** <br> Unit 1 Quiz | **17** <br>                                              | **18** <br>                                                | **19** <br>                                                           |
+| Mon                                                        | Tue                                                        | Wed                                                      | Thu                                                         | Fri                                                                   |
+| ---------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------- |
+| **1**                                                      | **2**                                                      | **3** <br> Install Java on computers                     | **4** <br> Sign up for Github / AP Classroom                | **5** <br> SNOW DAY                                                   |
+| **8** <br> Videos & MCQs on 1.1 <br> Videos & MCQs on 1.2  | **9** <br> SNOW DAY                                        | **10** <br> Videos & MCQ on 1.3 <br> Videos & MCQ on 1.4 | **11** <br> Videos & MCQ on 1.5 <br> Command line arguments | **12** <br> Catch up on videos/MCQs <br> Command line args assignment |
+| **15** <br> MLK Day                                        | **16** <br> COLD WEATHER DAY                               | **17** <br> Unit 1 MCQ Progress Check                    | **18** <br> Videos & MCQ on 2.1 <br> Videos & MCQ on 2.2    | **19** <br> _Videos & MCQ on 2.3 <br> Videos & MCQ on 2.4_            |
+| **22** <br> _Videos & MCQ on 2.5 <br> Videos & MCQ on 2.6_ | **23** <br> _Videos & MCQ on 2.7 <br> Videos & MCQ on 2.8_ | **24** <br> _Videos & MCQ on 2.9 <br>Review_             | **25** <br> _Unit 2 MCQ Progress Check_                     | **26** <br> _Unit 2 FRQ Progress Check_                               |
 
 ## Compiling / Running Java Code
 
