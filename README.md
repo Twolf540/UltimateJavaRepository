@@ -32,6 +32,18 @@
 - 1.4 Compound Assignment Operators
 - 1.5 Casting and Ranges of Variables
 
+### Unit 2 - Using Objects
+
+- 2.1 Objects - Instances of Classes
+- 2.2 Creating and Storing Objects (Instantiation)
+- 2.3 Calling a Void Method
+- 2.4 Calling a Void Method with Parameters
+- 2.5 Calling a Non-void Method
+- 2.6 String Objects - Concatenation, Literals, and More
+- 2.7 String Methods
+- 2.8 Wrapper Classes - Integer and Double
+- 2.9 Using the Math Class
+
 ## Course Calendar
 
 ### January
@@ -40,7 +52,7 @@
 | ---------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------- |
 | **1**                                                      | **2**                                                      | **3** <br> Install Java on computers                     | **4** <br> Sign up for Github / AP Classroom                | **5** <br> SNOW DAY                                                   |
 | **8** <br> Videos & MCQs on 1.1 <br> Videos & MCQs on 1.2  | **9** <br> SNOW DAY                                        | **10** <br> Videos & MCQ on 1.3 <br> Videos & MCQ on 1.4 | **11** <br> Videos & MCQ on 1.5 <br> Command line arguments | **12** <br> Catch up on videos/MCQs <br> Command line args assignment |
-| **15** <br> MLK Day                                        | **16** <br> COLD WEATHER DAY                               | **17** <br> Unit 1 MCQ Progress Check                    | **18** <br> Videos & MCQ on 2.1 <br> Videos & MCQ on 2.2    | **19** <br> _Videos & MCQ on 2.3 <br> Videos & MCQ on 2.4_            |
+| **15** <br> MLK Day                                        | **16** <br> COLD WEATHER DAY                               | **17** <br> Unit 1 MCQ Progress Check                    | **18** <br> Videos & MCQ on 2.1 <br> Videos & MCQ on 2.2    | **19** <br> Videos & MCQ on 2.3 <br> Videos & MCQ on 2.4              |
 | **22** <br> _Videos & MCQ on 2.5 <br> Videos & MCQ on 2.6_ | **23** <br> _Videos & MCQ on 2.7 <br> Videos & MCQ on 2.8_ | **24** <br> _Videos & MCQ on 2.9 <br>Review_             | **25** <br> _Unit 2 MCQ Progress Check_                     | **26** <br> _Unit 2 FRQ Progress Check_                               |
 
 ## Compiling / Running Java Code
