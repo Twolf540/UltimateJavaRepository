@@ -1,6 +1,6 @@
 # 1.2 Variables and Data Types
 ## 1_2 P1
-### "Primitive" Data - Information used in a program**
+### "Primitive" Data - Information used in a program
 "Primitave" Data - Part of the language, can't perform actions, but can be used 
 + Int - Integers - Represent whole numbers
 + Booleans - True or false(1 or 0)
@@ -8,7 +8,7 @@
 + Strings - Represent lines of text
 
 ## 1_2 P2
-Variable - a value that a "memory location"(string of letters, digits, underscore)
+Variable - a value that a "memory location" (string of letters, digits, underscore)
 + Can't start with a digit
 + No spaces
 + No special characters (&,@,$)
