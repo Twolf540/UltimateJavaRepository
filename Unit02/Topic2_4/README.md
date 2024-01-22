@@ -13,6 +13,8 @@ Parameters are variables such as integers, doubles, booleans, and strings that t
 
 Multiple methods of the same name with different parameters can be used. The program will use the method whose parameters match the given data, allowing different actions to be performed based on the amount and type of information being provided.
 
+Void methods **do not** return a value, only output what they are programmed to
+
 ## 2_4 P2
 Example: A frog can move forward a given number of hops or a predefined number of hops if it is not specified. A frog can also move either to the left or to the right a given number of hops.
 + Method A - Allows the frog to move forward the given number of hops
