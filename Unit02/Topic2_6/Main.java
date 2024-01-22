@@ -13,10 +13,15 @@ public class Main {
   //   System.out.println(name2);
   //   System.out.println(name1 + " and " + name2 + " are friends");
 
-  String name1 = new String("Tyler");
-  String name2 = new String("Mario");
-  System.out.println("\"" + name1 + "\"");
-  System.out.println("\\" + name2 + "\\");
-  System.out.println(name2 + "\n");
+  // String name1 = new String("Tyler");
+  // String name2 = new String("Mario");
+  // System.out.println("\"" + name1 + "\"");
+  // System.out.println("\\" + name2 + "\\");
+  // System.out.println(name2 + "\n");
+
+  String s = "0";
+
+  s += s + 0 + 8;
+  System.out.println(s);
   }
 }
