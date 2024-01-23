@@ -39,6 +39,17 @@ public class stringObjects2_6 {
 Jadon Java 17
 Jessica Java16
 ```
+When combining strings and other data types, every piece of data after a string is introduced will act like a string
+
+Ex:
+```
+public class stringObjects2_6 {
+    public static void main(String[]) {
+        System.out.println("name " + true + 0);
+    }
+}
+```
+This will output "name true0"
 ## 2_6 P3
 Escape Sequences - allow the output of special characters and insertion of actions
 
