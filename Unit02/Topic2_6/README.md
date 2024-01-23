@@ -39,7 +39,7 @@ public class stringObjects2_6 {
 Jadon Java 17
 Jessica Java16
 ```
-When combining strings and other data types, every piece of data after a string is introduced will act like a string
+When combining strings and other data types, data will act like its class before a string is introduced, but every piece of data after a string is introduced will act like a string
 
 Ex:
 ```
