@@ -33,3 +33,23 @@ public class Wrapper2_8b {
     }
 }
 ```
+
+## 2_8 P3
+Autoboxing and Unboxing - Autoboxing takes primitive data and makes the data into its wrapper-class counterpart. Unboxing does the reverse.
+
+Primitiva data types store only single values - 1, 2, 3.5
+
+Reference types store only references - Ex: String
+
+Wrapper classes convert primitive data into reference types
+
+Example of autoboxing:
+```
+Integer num1 = new Integer(num);
+Integer integerNum = num;
+```
+Example of unboxing:
+```
+int unNum1 = num1
+```
+Operations, such as adding Integer objects and then dividing to find the average, and then assigning it to an int will result in unboxing
