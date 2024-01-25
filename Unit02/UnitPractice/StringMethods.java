@@ -36,15 +36,18 @@ public class StringMethods {
 
     public static String nTwice(String str, int n) {
         int stringLength = str.length();
-        return "";
+        String strFirstHalf = new String(str.substring(0, n));
+        String strSecondHalf = new String(str.substring(stringLength - n));
+        return (strFirstHalf + strSecondHalf);
     }
 
     public static String makeTags(String tag, String word) {
-        return "";
+        return ("<" + tag + ">" + word + "</" + tag + ">");
     }
 
     public static String middleTwo(String str) {
-        return "";
+        int halfString = (str.length() / 2);
+        return str.substring((halfString - 1), (halfString + 1));
     }
 
     public static void main(String[] args) {
