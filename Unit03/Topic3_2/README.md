@@ -24,4 +24,4 @@ public class Main {
 }
 ```
 ## 3_2 P2
-
+Wrote (and fixed) Magpie chatbot code
