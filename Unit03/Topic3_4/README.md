@@ -17,3 +17,26 @@ System.out.println("Your dog is an adult");
 ```
 
 ## 3_4 P2
+use "findKeyword(var, "text") >= #place" to find keywords in inputs
+
+```
+public String getResponse(String statement){
+    String response = "";
+    
+    if(statement.length == 0){
+       response = ("Say something, please.");
+    }
+
+    else if (findKeyword(statement, "no") >= 0){
+        response = "Why so negative?";
+    }
+
+    else if (findKeyword(statement, "mother") >=0 )
+        || findKeyword(statement, "father") >= 0
+        || findKeyword(statement, "brother") >= 0
+        || findKeyword(statement, "sister") >= 0
+    {
+        response = "Tell me more about your family";
+    }
+}
+```
