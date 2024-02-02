@@ -42,7 +42,7 @@
    Run these programs on the "Gettysburg Address" and "I Have a Dream" text files to give output like:
 
    ```
-   cat gettysburg.txt | java Unit03.Xtras.BasicTextAnalysis
+   cat Unit03\Xtras\gettysburg.txt | java Unit03.Xtras.BasicTextAnalysis
    ```
 
    To give something like:
