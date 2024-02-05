@@ -32,7 +32,7 @@
    - The first word in the text (words are separated by spaces)
    - The first sentence in the text (sentences are separated by periods)
 
-   Using the `Scanner` class, you can read multiple lines of text (until the user enters Ctrl-d) by using the following code:
+   Using the `Scanner` class, you can read multiple lines of text (until the user enters Ctrl-z on Windows, or Ctrl-d on Mac/Linux) by using the following code:
 
    ```
    scan.useDelimiter("\\Z");
