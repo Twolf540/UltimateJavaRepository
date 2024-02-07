@@ -54,6 +54,14 @@
 - [3.6 Equivalent Boolean Expressions](Unit03/Topic3_6/README.md)
 - [3.7 Comparing Objects](Unit03/Topic3_7/README.md)
 
+### [Unit 4 - Iteration](Unit04/README.md)
+
+- [4.1 `while` Loops](Unit04/Topic4_1WhileLoops.java)
+- [4.2 `for` Loops](Unit04/Topic4_2ForLoops.java)
+- [4.3 Developing Algorithms Using Strings](Unit04/Topic4_3AlgorithmsUsingStrings.java)
+- [4.4 Nested Iteration](Unit04/Topic4_4NestedIteration.java)
+- [4.5 Informal Code Analysis](Unit04/Topic4_5InformalCodeAnalysis.java)
+
 ## Course Calendar
 
 | Mon                                                                    | Tue                                                      | Wed                                                          | Thu                                                                | Fri                                                                   |
@@ -63,7 +71,9 @@
 | **15** <br> MLK Day                                                    | **16** <br> COLD WEATHER DAY                             | **17** <br> Unit 1 MCQ Progress Check                        | **18** <br> Videos & MCQ on 2.1 <br> Videos & MCQ on 2.2           | **19** <br> Videos & MCQ on 2.3 <br> Videos & MCQ on 2.4              |
 | **22** <br> Videos & MCQ on 2.5 <br> Videos & MCQ on 2.6               | **23** <br> Videos & MCQ on 2.7 <br> Videos & MCQ on 2.8 | **24** <br> Videos & MCQ on 2.9 <br>Unit Practice Assignment | **25** <br> Unit 2 MCQ Progress Check<br> Unit Practice Assignment | **26** <br> Unit 2 FRQ Progress Check                                 |
 | **29** <br> Videos & MCQ on 3.1 <br> Videos & MCQ on 3.2               | **30** <br> Videos & MCQ on 3.3 <br> Videos & MCQ on 3.4 | **31** <br> Videos & MCQ on 3.5 <br> FRQ on 3.5              | **1st Feb** <br> Videos & MCQ on 3.6 <br> Videos & MCQ on 3.7      | **2** <br> `Scanner` assignment <br> FRQ on 3.7                       |
-| **5** <br> Unit 3 MCQ Progress Check <br> Work on `Scanner` assignment | **6** <br> _Unit 3 FRQ Progress Check_                   | **7** <br>                                                   | **8** <br>                                                         | **9** <br>                                                            |
+| **5** <br> Unit 3 MCQ Progress Check <br> Work on `Scanner` assignment | **6** <br> Unit 3 FRQ Progress Check                     | **7** <br> _Videos & MCQ on 4.1_                             | **8** <br> _Videos & MCQ on 4.2_                                   | **9** <br> _Videos & MCQ on 4.3_                                      |
+| **12** <br> NO SCHOOL                                                  | **13** <br> _Programming Assignment_                     | **14** <br> _Videos & MCQ on 4.4 & 4.5_                      | **15** <br> _FRQ on 4.4_                                           | **16** <br> _Unit 4 MCQ Progress Check_                               |
+| **19** <br> _Unit 4 FRQ Progress Check_                                | **20** <br>                                              | **21** <br>                                                  | **22** <br>                                                        | **23** <br>                                                           |
 
 ## Gradebook Categories
 
