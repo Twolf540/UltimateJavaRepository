@@ -54,7 +54,35 @@ while(multipleNum <= 10){
 }
 ```
 ## 4.2 - `for` Loops
+### 4_2 P1
+for loop - while loop but it sets the LCV, checks it, and updates it, rather than you having to write in the LCV intialization and update manually.
 
+```
+for (initialization; Boolean expression; update){
+    //code goes here
+}
+```
+ex:
+```
+for (x=0; x<10; x++)
+```
+for loops will run the loop once if the LCV meets the conditions before updating it.
+
+### 4_2 P2
+for loops - good for loops that need to run a defined number of times
+
+while loops - better for loops that run a random number of times or are based on complex boolean expressions/variables
+
+off by one error - a statement runs one time too many or one time less than it should
+
+### 4_2 P3
+```
+double principal = 200.0;
+for (years = 1; years <= 50; x++){
+    principal *= 1.1;
+}
+System.out.println("You have $" + principal + " dollars);
+```
 ## 4.3 - Developing Algorithms Using Strings
 
 ## 4.4 - Nested Iteration
