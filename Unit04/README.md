@@ -84,7 +84,62 @@ for (years = 1; years <= 50; x++){
 System.out.println("You have $" + principal + " dollars);
 ```
 ## 4.3 - Developing Algorithms Using Strings
-
+### 4_3 P1
+```
+public class sunflower{
+    public static void main(String[] args){
+        String word = "sunflower";
+        String sub = "low";
+        boolean found = false;
+    
+        for(int i = 0; i <+ word.length() - sub.length; i++){
+            String portion = word.substring(i,i + sub.length());
+            if(portion.equals(sub)){
+            found = true;
+            }
+        }
+    
+        if (found){
+            System.out.println("We found the string");
+        }
+    
+        else{
+            System.out.println("We did not find the string");
+        }
+    }
+}
+```
+make sure to avoid going under/over the length of a string when using ".substring"
+### 4_3 P2
+```
+public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    String str = scan.next();
+    int count = 0;
+    for(int i = 0; i < str.length(); i++){
+        String letters = str.substring(i, i + 1);
+        if(letters.equals("a") || letters.equals("e") || letters.equals("i") || letters.equals("o") || letters.equals("u")){
+                count++;
+        }
+    }
+    System.out.println("There are " + count + " vowels");
+    scan.close();
+}
+```
+### 4_3 P3
+```
+public static void main(String[] args) {
+       Scanner scan = new Scanner(System.in);
+       String original = scan.next();
+       String reversed = "";
+       scan.close();
+       for (int i = 0; i < original.length(); i++){
+            String single = original.substring(i, i+1);
+            reversed = (single + reversed);
+       }
+       System.out.println(reversed);
+}
+```
 ## 4.4 - Nested Iteration
 
 ## 4.5 - Informal Code Analysis
