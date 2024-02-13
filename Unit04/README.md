@@ -141,5 +141,69 @@ public static void main(String[] args) {
 }
 ```
 ## 4.4 - Nested Iteration
+### 4_4 P1
+Nested Iterations - loops in a loop. The inner loop must complete all iterations before the outer loop can run. In for, statements, the LCV of outer statements can be be used in inner statements, but you cannot do the reverse.
 
+With nested for loops, when the outside loop runs again, it will change the LCV back to the value defined in the for loop
+```
+for(int k= 0; k< 5; k++;){
+    for(int x = 0; x <5; x++;){
+    // code goes here
+    }
+}
+```
+each time the loop with k runs, x will be set to 0 again
+
+Example of nested iteration - clock, seconds hand moves 59 times, and on the final time, the minute hand moves. minutes hand moves 59 times, and on the final time, the hour hand moves
+
+```
+int h;
+for(h = 0; h < 24; h++){
+    for(int m = 0; m < 60; m++){
+        for(int s = 0; s < 60; s++){
+            System.out.print(h + " ");
+            System.out.print(m + " ");
+            System.out.println(s);
+        }
+    }
+}
+if(h == 24){
+    System.out.println("0 0 0");
+    h = 0;
+}
+```
+### 4_4 P2
+Video 2 was just examples of how nested iterations work
+
+Answer to example was C. The loop needed to have outer = 1, so it could not be D, which was x > 1, so C with x >= 1 had to be the answer.
+### 4_4 P3
+```
+for(int outer = 0; outer < 3; outer++){
+    for(int inner = 0; inner < 5; inner++;){
+        System.out.print(inner + " ");
+    }
+    System.out.println();
+}
+```
+This will output:
+```
+0 1 2 3 4
+0 1 2 3 4
+```
 ## 4.5 - Informal Code Analysis
+### 4_5 P1
+Analyzing code
+
+Line 2: 3 6 9 12 15 18 21 24 27
++ Line 2 will run 9 times
+
+Line 3: 0 3 6 9 12 15 18 21 24 27
++ Line 3 will run 10 times
+### 4_5 P2
+Times loops will run (in order in the video)
++ 99
++ 99
++ 1000
++ 44
++ Min = 0, Max = infinite
+### 4_5 P3
