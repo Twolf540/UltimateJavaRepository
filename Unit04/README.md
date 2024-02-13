@@ -207,3 +207,11 @@ Times loops will run (in order in the video)
 + 44
 + Min = 0, Max = infinite
 ### 4_5 P3
+Times loops will run (in order in the video)
++ 12
++ 15
+    + 5 + 4 + 3 + 2 + 1
++ 28
+    + 7(outside) x 4(inner) 
++ 0 min, 5 max
+    + The outer loop will run 5 times regardless of the random value. The inner loop might run 0 times if the random number != 6 every time, or it might run an infinite numner of times if it always = 6. 
