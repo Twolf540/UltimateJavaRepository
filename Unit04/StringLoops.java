@@ -138,6 +138,9 @@ public class StringLoops {
             }
             return "";
         } 
+        // move return starOutString to x>2. currently in for loop
+        // length == 1 needs to return actual character, not just blank string
+        // last character needs to be fixed. remove parentheses, maybe issues with checking length and then running for loop?
         else if (str.length() == 1 && !str.substring(0, 1).equals("*")) {
             return "";
         } 
