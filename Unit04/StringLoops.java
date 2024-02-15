@@ -46,8 +46,8 @@ public class StringLoops {
 
     public static String doubleChar(String str) {
         String dosString = "";
-        for(int charNum = 0; charNum <= (str.length() - 1); charNum++){
-            String nextChar = (str.substring(charNum, charNum + 1)); 
+        for (int charNum = 0; charNum <= (str.length() - 1); charNum++) {
+            String nextChar = (str.substring(charNum, charNum + 1));
             dosString += (nextChar + nextChar);
         }
         return dosString;
@@ -55,11 +55,11 @@ public class StringLoops {
 
     public static int countCode(String str) {
         int codeInstance = 0;
-        for(int x = 0; x <= (str.length() - 4); x++){
-            String strFrom = str.substring(x , x + 2);
-            if (strFrom.equals("co")){
+        for (int x = 0; x <= (str.length() - 4); x++) {
+            String strFrom = str.substring(x, x + 2);
+            if (strFrom.equals("co")) {
                 String strFrom2 = str.substring((x + 3), (x + 4));
-                if(strFrom2.equals("e")){
+                if (strFrom2.equals("e")) {
                     codeInstance++;
                 }
             }
@@ -69,9 +69,9 @@ public class StringLoops {
 
     public static boolean bobThere(String str) {
         boolean bobInstance = false;
-        for(int x = 0; x <= (str.length() - 3); x++){
-            if(str.substring(x, x + 1).equals("b")){
-                if(str.substring(x + 2, x + 3).equals("b")){
+        for (int x = 0; x <= (str.length() - 3); x++) {
+            if (str.substring(x, x + 1).equals("b")) {
+                if (str.substring(x + 2, x + 3).equals("b")) {
                     bobInstance = true;
                     x = (str.length());
                 }
@@ -81,10 +81,10 @@ public class StringLoops {
     }
 
     public static boolean prefixAgain(String str, int n) {
-        String preString = str.substring(0 , n);
+        String preString = str.substring(0, n);
         boolean prefixInstance = false;
-        for(int x = n; x <= (str.length() - n); x++){
-            if(str.substring(x , x + n).equals(preString)){
+        for (int x = n; x <= (str.length() - n); x++) {
+            if (str.substring(x, x + n).equals(preString)) {
                 prefixInstance = true;
             }
         }
@@ -95,20 +95,19 @@ public class StringLoops {
         int starCount = 0;
         int starInstance = 0;
         boolean isStar = false;
-        if(str.length() > 0){
-            for(int x = 0; x <= (str.length() - 3); x++){
-                if(str.substring(x + 1, x + 2).equals("*")){
+        if (str.length() > 0) {
+            for (int x = 0; x <= (str.length() - 3); x++) {
+                if (str.substring(x + 1, x + 2).equals("*")) {
                     starCount++;
-                    if(str.substring(x, x + 1).equals(str.substring(x + 2, x+3))){
+                    if (str.substring(x, x + 1).equals(str.substring(x + 2, x + 3))) {
                         starInstance++;
                     }
                 }
             }
-            if(starCount == starInstance){
+            if (starCount == starInstance) {
                 isStar = true;
             }
-        }
-        else{
+        } else {
             isStar = true;
         }
         return isStar;
@@ -116,16 +115,38 @@ public class StringLoops {
 
     public static String starOut(String str) {
         String starOutString = "";
-        for(int x = 0; x <= (str.length() - 2); x++){
-            if(!str.substring(x + 1, x + 2).equals("*")){
-                starOutString += (str.substring(x, x + 1));
+        if (str.length() > 2) {
+            for (int x = 0; x <= (str.length() - 1); x++) {
+                if (x > 0 && x < (str.length() - 1)) {
+                    if (!(str.substring(x - 1, x).equals("*"))
+                            && !(str.substring(x, x + 1).equals("*"))
+                            && !(str.substring(x + 1, x + 2).equals("*"))) {
+                        starOutString += (str.substring(x, x + 1));
+                    }
+                } else if (x == 0 && !(x == str.length())) {
+                    if (!(str.substring(x + 1, x + 2).equals("*"))
+                            && !(str.substring(x, x + 1).equals("*"))) {
+                        starOutString += (str.substring(x, x + 1));
+                    }
+                } else if (x == (str.length() - 1) && !(x == 0)) {
+                    if (!(str.substring(x - 1, x).equals("*"))
+                            && !(str.substring(x, x + 1).equals("*"))) {
+                        starOutString += (str.substring(x, x + 1));
+                    }
+                }
+                return starOutString;
             }
-            else{
-                x += 2;
-            }
+            return "";
+        } 
+        else if (str.length() == 1 && !str.substring(0, 1).equals("*")) {
+            return "";
+        } 
+        else if (str.length() == 0) {
+            return "";
+        } 
+        else {
+            return "";
         }
-        starOutString += str.substring(str.length() - 1);
-        return starOutString;
     }
 
     public static int countHi(String str) {
@@ -155,6 +176,7 @@ public class StringLoops {
     public static String repeatSeparator(String word, String sep, int count) {
         return "";
     }
+
     public static void main(String[] args) {
         System.out.println(starOut("ab**cd"));
     }
