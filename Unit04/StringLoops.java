@@ -156,23 +156,93 @@ public class StringLoops {
     }
     
     public static int countHi(String str) {
-        return 0;
+        int count = 0;
+        String part = "";
+        if (str.length() >= 2){
+            for(int x = 0; x <= (str.length() - 2); x++){
+                part = str.substring(x , x + 2);
+                if(part.equals("hi")){
+                    count++;
+                }
+            }
+        }
+        else{
+            count = 0;
+        }
+        return count;
     }
 
     public static boolean endOther(String a, String b) {
-        return false;
+        String aLower = a.toLowerCase();
+        String bLower = b.toLowerCase();
+        boolean abEqual = false;
+        if(a.length() > b.length()){
+            String aEnd = aLower.substring(aLower.length()-bLower.length());
+            if(aEnd.equals(bLower)){
+                abEqual = true;
+            }
+        }
+        else if(b.length() > a.length()){  
+            String bEnd = bLower.substring(bLower.length()-aLower.length());
+            if(bEnd.equals(aLower)){
+                abEqual = true;
+            }
+        }
+        else if(a.length() == b.length()){
+            if(aLower.equals(bLower)){
+                abEqual = true;
+            }
+        }
+        return abEqual;
     }
 
     public static boolean xyBalance(String str) {
-        return false;
+        boolean isBalanced = true;
+        if(str.length() >= 2){
+            for(int x = 0; x <= str.length()-1; x++){
+                if(str.substring(x , x + 1).equals("x")){
+                    isBalanced = false;
+                }
+                if(str.substring(x , x + 1).equals("y")){
+                    isBalanced = true;
+                }
+            }
+        }
+        else if(str.length() == 1 && str.equals("x")){
+            isBalanced = false;
+        }
+        else if(str.length() == 0){
+            isBalanced = true;
+        }
+        return isBalanced;
     }
 
     public static String plusOut(String str, String word) {
+        String plusStr = "";
+        for(int x = 0; x <= str.length() - word.length()){
+            if(!(str.substring(x , (x + word.length())).equals(word))){
+                plusStr += "+";
+            }
+        }
         return "";
     }
 
     public static boolean catDog(String str) {
-        return false;
+        int catCount = 0;
+        int dogCount = 0;
+        boolean dogCatEqual = false;
+        for(int x = 0; x <= (str.length() - 3); x++){
+            if(str.substring(x, x + 3).equals("dog")){
+                dogCount++;
+            }
+            if(str.substring(x, x + 3).equals("cat")){
+                catCount++;
+            }
+        }
+        if(dogCount == catCount){
+            dogCatEqual = true;
+        }
+        return dogCatEqual;
     }
 
     public static String mixString(String a, String b) {
