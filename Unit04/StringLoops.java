@@ -119,30 +119,33 @@ public class StringLoops {
             for (int x = 0; x <= (str.length() - 1); x++) {
                 if (x > 0 && x < (str.length() - 1)) {
                     if (!(str.substring(x - 1, x).equals("*"))
-                            && !(str.substring(x, x + 1).equals("*"))
-                            && !(str.substring(x + 1, x + 2).equals("*"))) {
-                        starOutString += (str.substring(x, x + 1));
+                        && !(str.substring(x, x + 1).equals("*"))
+                        && !(str.substring(x + 1, x + 2).equals("*"))) {
+                            starOutString += (str.substring(x, x + 1));
                     }
-                } else if (x == 0 && !(x == str.length())) {
+                } else if (x == 0) {
                     if (!(str.substring(x + 1, x + 2).equals("*"))
-                            && !(str.substring(x, x + 1).equals("*"))) {
-                        starOutString += (str.substring(x, x + 1));
+                        && !(str.substring(x, x + 1).equals("*"))) {
+                            starOutString += (str.substring(x, x + 1));
                     }
-                } else if (x == (str.length() - 1) && !(x == 0)) {
+                } else if (x == (str.length() - 1)) {
                     if (!(str.substring(x - 1, x).equals("*"))
-                            && !(str.substring(x, x + 1).equals("*"))) {
-                        starOutString += (str.substring(x, x + 1));
+                        && !(str.substring(x, x + 1).equals("*"))) {
+                            starOutString += (str.substring(x, x + 1));
                     }
                 }
-                return starOutString;
             }
-            return "";
+            return starOutString;
         } 
-        // move return starOutString to x>2. currently in for loop
-        // length == 1 needs to return actual character, not just blank string
-        // last character needs to be fixed. remove parentheses, maybe issues with checking length and then running for loop?
+        else if(str.length() == 2){
+            if (!(str.substring(0, 1).equals("*"))
+                && !(str.substring(1 , 2).equals("*"))) {
+                    starOutString = str;
+            }
+            return starOutString;
+        }
         else if (str.length() == 1 && !str.substring(0, 1).equals("*")) {
-            return "";
+            return str;
         } 
         else if (str.length() == 0) {
             return "";
@@ -151,7 +154,7 @@ public class StringLoops {
             return "";
         }
     }
-
+    
     public static int countHi(String str) {
         return 0;
     }
