@@ -219,12 +219,21 @@ public class StringLoops {
 
     public static String plusOut(String str, String word) {
         String plusStr = "";
-        for(int x = 0; x <= str.length() - word.length()){
+        int i = 0;
+        for(int x = 0; x <= (str.length() - word.length()); x++){
             if(!(str.substring(x , (x + word.length())).equals(word))){
                 plusStr += "+";
             }
+            if((str.substring(x , (x + word.length())).equals(word))){
+                plusStr += word;
+                x += (word.length()- 1);
+            }
+            i = x;
         }
-        return "";
+        for (int y = i; y < (str.length() - 1); y++){
+                plusStr += "+";
+            }
+        return plusStr;
     }
 
     public static boolean catDog(String str) {
@@ -246,11 +255,28 @@ public class StringLoops {
     }
 
     public static String mixString(String a, String b) {
-        return "";
+        String combinedString = "";
+        int longLength = Math.max(a.length(), b.length());
+        for(int x = 0; x <= (longLength - 1); x++){
+            if (x <= (a.length() - 1)){
+                combinedString += a.substring(x, x + 1);
+            }
+            if (x <= (b.length() - 1)){
+                combinedString += b.substring(x, x + 1);
+            }
+        }
+        return combinedString;
     }
 
     public static String repeatSeparator(String word, String sep, int count) {
-        return "";
+        String repeated = "";
+        for(int x = 1; x <= count; x++){
+            repeated += (word);
+            if(x < count){
+                repeated += (sep);
+            }
+        }
+        return repeated;
     }
 
     public static void main(String[] args) {
