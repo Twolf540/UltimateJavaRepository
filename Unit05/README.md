@@ -105,6 +105,40 @@ public class Snack{
     }
 }
 ```
+### 5_2 P2
+```
+public class Sport
+
+    private String name;
+    private int numAthletes;
+
+    public Sport(){
+        name = "";
+        numAthletes = 0;
+
+    public Sport(string n, int numAth){
+        name = n;
+        numAthletes = numAth;
+    }
+
+    public Sport(String n){
+        name = n;
+        numAthletes = 0;
+    }
+
+    public Sport(int numAth){
+        name = "";
+        numAthletes = numAth;
+    }
+}
+```
+
+Default values:
++ int - 0
++ double - 0.0
++ Strings/others - null
+### 5_2 P3
+
 ## 5.3 - Documentation with Comments
 
 ## 5.4 - Accessor Methods
