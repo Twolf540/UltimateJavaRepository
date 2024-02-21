@@ -132,17 +132,121 @@ public class Sport
     }
 }
 ```
+If no constructor is created, the class will use default values
 
 Default values:
 + int - 0
 + double - 0.0
 + Strings/others - null
 ### 5_2 P3
+```
+public class Cow{
+    private String sound;
+    private String type;
+    private int numMilkings
 
+    public Cow{
+        sound = "moo";
+        type = "holstein"
+        numMilkings = 0;
+    }
+
+    public Cow(String s, int nm, String t){
+        sound = s;
+        type = t;
+        numMilkings = nm;
+    }
+}
+
+public class Car{
+    private int day;
+    private int month;
+    private int year;
+    public Car{
+        make = "hyundai"
+        model = "sonata"
+    }
+}
+```
 ## 5.3 - Documentation with Comments
+### 5_3 P1
+Comments are inserted into the code to explain the function of certain segments
 
+Single line comments start with two slashes \/
+```
+// this is a comment
+```
+
+Multi-line comments start and end with and asterick and a slash
+```
+/*
+this is
+a comment
+    */
+```
+
+Documentation comments start with a slash and two astericks, and end with a slash and an asterick
+```
+/**
+* this is
+* a
+* comment
+    */
+```
+### 5_3 P2
+Precondition: something that is already true before a condition can execute. Its value does not matter once the method starts
+
+Postcondition: a value that is checked inside of a method. This must remain the same or change in a specific way for the method to work.
+
+Code:
+All but C would work
 ## 5.4 - Accessor Methods
+### 5_4 P1
+Accessor methods allow you to access things in a class
 
+Accessor methods do not have parameters
+
+Ex:
+```
+public class Car{
+    private String make;
+    private String model;
+
+    public String getMake(){
+        return make;
+    }
+    public String getModel(){
+        return make;
+    }
+}
+```
+```
+public class Pet{
+    private String name;
+    private String typeOfPet;
+    private int age;
+
+    public String getName(){
+        return name;
+    }
+    public String getTypeOfPet(){
+        return typeOfPet;
+    }
+    public String getAge(){
+        return age;
+    }
+}
+```
+### 5_4 P2
+toString returns the instance variables used in an object
+
+```
+public String toString{}
+
+System.out.println(object);
+```
+
+The println will use toString to compile the objects data as a string and then print it.
 ## 5.5 - Mutator Methods
 
 ## 5.6 - Writing Methods

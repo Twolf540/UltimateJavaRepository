@@ -4,7 +4,6 @@ public class testFRQ {
     public static void longestStreak(String str){
         int count1 = 0;
         int count2 = 0;
-        int y = 0;
         String letter = ("");
         String streak = ("");
         for(int x = 0; x <= (str.length() - 1); x++){
@@ -18,7 +17,6 @@ public class testFRQ {
                         i = (str.length() + 1);
                         streak = (letter + " " + count1);
                     }
-                    y++;
                 }
             }
             if(letter.equals(str.substring(x + 1, x + 2)) && count1 > 0){
@@ -32,11 +30,8 @@ public class testFRQ {
                         streak = (letter + " " + count2);
                         }
                     }
-                    y++;
                 }
             }
-        x += y;
-        y = 0;
         }
     System.out.println(streak);
     }

@@ -115,19 +115,23 @@ public class StringLoops {
 
     public static String starOut(String str) {
         String starOutString = "";
+        // this section looks for and removes stars in strings with more than two characters
         if (str.length() > 2) {
             for (int x = 0; x <= (str.length() - 1); x++) {
+                // finds stars from the second character to the second to last character
                 if (x > 0 && x < (str.length() - 1)) {
                     if (!(str.substring(x - 1, x).equals("*"))
                         && !(str.substring(x, x + 1).equals("*"))
                         && !(str.substring(x + 1, x + 2).equals("*"))) {
                             starOutString += (str.substring(x, x + 1));
                     }
+                // finds stars in the first character
                 } else if (x == 0) {
                     if (!(str.substring(x + 1, x + 2).equals("*"))
                         && !(str.substring(x, x + 1).equals("*"))) {
                             starOutString += (str.substring(x, x + 1));
                     }
+                // finds stars in the last character
                 } else if (x == (str.length() - 1)) {
                     if (!(str.substring(x - 1, x).equals("*"))
                         && !(str.substring(x, x + 1).equals("*"))) {
@@ -136,20 +140,24 @@ public class StringLoops {
                 }
             }
             return starOutString;
-        } 
-        else if(str.length() == 2){
+        }
+        // these look for and remove stars in strings that are 2, 1, or 0 characters long 
+        else if(str.length() == 2){ // 2 characters
             if (!(str.substring(0, 1).equals("*"))
                 && !(str.substring(1 , 2).equals("*"))) {
                     starOutString = str;
             }
             return starOutString;
         }
+        // 1 character
         else if (str.length() == 1 && !str.substring(0, 1).equals("*")) {
             return str;
-        } 
+        }
+        // 0 characters
         else if (str.length() == 0) {
             return "";
-        } 
+        }
+        // neccesary else to finish code. will never trigger
         else {
             return "";
         }
