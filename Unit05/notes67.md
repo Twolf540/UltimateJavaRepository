@@ -95,3 +95,54 @@ public static void main(String[] args){
 This will change x. a references x, making them the same object just with two names. This means any changes to a will affect x.
 ## 5.7 - Static Variables and Methods
 ### 5_7 P1
+Static methods/variables:
++ Methods cannot change or use instance variables or non-static methods
++ Variables cannot be used in non static methods
+```
+public class Assignment {
+    private static int nextClassworkID = 1;
+    private static int nextHomeworkID = 1;
+    private String name;
+    private int pointValue;
+
+    public double getGrade(int score){
+        return (double)(score / pointValue);
+    }
+
+    public static int numAssignments(){
+        return ((nextClassworkID + nextHomeworkID) - 2); 
+    }
+}
+```
+Constructors can access all variables
+### 5_7 P2
+```
+public class Assignment {
+    private static int nextClassworkID = 1;
+    private static int nextHomeworkID = 1;
+    private String name;
+    private int pointValue;
+    private String type;
+
+    public Assignment(int pv, String t){
+        pointValue = pv;
+        type = t;
+        if(type == "Classwork"){
+            name = type + " " + nextClassworkID;
+            nextClassworkID++;
+        }
+        if(type == "Homework"){
+            name = type + " " + nextHomeworkID;
+            nextHomeworkID++;
+        }
+    }
+    public double getGrade(int score){
+        return (double)(score / pointValue);
+    }
+
+    public static int numAssignments(){
+        return ((nextClassworkID + nextHomeworkID) - 2); 
+    }
+}
+```
+Since constructors can access both static and non static variables, you change instance variables while also incrmenting the classwork/homework IDs with each assignment created
