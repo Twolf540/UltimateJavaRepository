@@ -146,3 +146,76 @@ public class Assignment {
 }
 ```
 Since constructors can access both static and non static variables, you change instance variables while also incrmenting the classwork/homework IDs with each assignment created
+## 5.8 - Scope and Access
+### 5_8 P1
+local variables are ONLY accesible where they are declared
+
+if you redeclare an instance variable like this
+```
+public class Bowler{
+    private int pins;
+    public Bowler{
+        int pins = 3;
+    }
+}
+```
+it will create a local variable with the same name as the instance variable. Any changes made to the local variable will not affect the instance variable
+
+Parameters are also considered local variables. They can only be accesed in the method they are declared in.
+
+Method Decomposition - breaking a large problem into smaller parts
+### 5_8 P2
+Common Errors:
++ Trying to access parameters in a different method
++ Trying to use local variables in a different method without declaring them again
++ Declaring a local variable as private or public
++ Redeclaring an instance variable in a method, creating an instance variable thot won't affect the instance variable
+## 5.9 - `this` Keyword
+### 5_9 P1
+'this' is used to improve readability of code
+
+It DOES NOT affect the code
+
+Ex:
+```
+public class Dog{
+    private String name;
+    private String breed;
+    public Dog(String n, String b){
+        name = n;
+        breed = b;
+    }
+    public String getBreed(){
+        return breed;
+    }
+    public boolean breedsMatch(Dog dog2){
+        return this.breed.equals(dog2.breed)
+    }
+}
+```
+```
+public class Dogs{
+    public boolean doBreedsMatch(Dog dog2){
+        return this.getBreed().equals(dog2.getBreed())
+    }
+}
+```
+'this' simply is a stand-in for the object calling the method. i.e., if dog1 calls breedsMatch, 'this' will stand in for dog1
+
+'this' could also be used in constructors in front of instance variables. It can either make the code more readable or allow you to use parameters with the smae name as instance variables.
+
+Ex:
+```
+public class Dog{
+    private String name;
+    private String breed;
+    public Dog(String name, String breed){
+        this.name = name;
+        this.breed = breed;
+    }
+}
+```
+this is the one of the few times 'this' will hava an effect on the code
+
+'this' can be used in a method call inside of a method. Ex: using 'this' in an awardPoints call inside of an updateScore call by a Dog object
+
