@@ -45,6 +45,7 @@ public class Calculator {
         double in2 = Double.parseDouble(s.nextLine());
         System.out.println("Please input the operation you would like to make: +, -, x, /");
         String op1 = s.next();
+        s.close();
         Calculator calc1 = new Calculator(in1, op1, in2);
         System.out.println(calc1);
         calc1.doOperation();
