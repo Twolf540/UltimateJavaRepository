@@ -218,4 +218,6 @@ public class Dog{
 this is the one of the few times 'this' will hava an effect on the code
 
 'this' can be used in a method call inside of a method. Ex: using 'this' in an awardPoints call inside of an updateScore call by a Dog object
-
+## 5.10 - Ethical and Social Implications of Computing Systems
+### 5_10 P1
+Golden Rule: Do unto others as you would have them do unto you
