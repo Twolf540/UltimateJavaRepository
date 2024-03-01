@@ -247,8 +247,119 @@ System.out.println(object);
 ```
 
 The println will use toString to compile the objects data as a string and then print it.
-## 5.5 - Mutator Methods
 
+Ex:
+```
+public class Sport{
+    private string name;
+    private int numAthletes;
+
+    public String toString(){
+        return "Sport: " + name + "\nNumber of Athletes: " + numAthletes;
+    }
+}
+
+public static void main(String[] args) {
+    Sport volleyball = new Sport("Volleyball", 12);
+    System.out.println(Volleyball)        
+}
+```
+
+This will print:
+```
+Sport: Volleyball
+Number of Athletes: 12
+```
+## 5.5 - Mutator Methods
+### 5_5 P1
+Mutator Methods - Allow you to change the values of instance variables outside of the class they are defined in.
+
+Ex:
+```
+public class Snack{
+    private String name;
+    private int calories;
+
+    public Snack(){
+        name = "";
+        calories = 0;
+    }
+
+    public void setName(string n){
+        name = n;
+    }
+
+    public void setCalories(int c){
+        calories = c;
+    }
+}
+```
+
+Mutator Methods:
++ Must be public
++ Usually named set(nameOfVariable)
++ Parameter type must match the instance variable the method modifies
+
+Cow Code:
+```
+public class Cow {
+    // instance variables
+        private int numMilkings;
+        private String name;
+        private String type;
+        private String sound;
+    // constructor and overloaded constructor
+        public Cow(){
+            numMilkings = 0;
+            name = "bessie";
+            type = "holstein";
+            sound = "moo";
+        }
+
+        public Cow(int nm, String n, String t){
+            numMilkings = nm;
+            name = n;
+            type = t;
+        }
+    // Accessor methods
+        // returns a cow's number of milkings
+        public int getNumMilkings(){
+            return numMilkings;
+        }
+
+        // returns a cow's type
+        public String getType(){
+            return type;
+        }
+
+        // returns a cow's name
+        public String getName(){
+            return name;
+        }
+    // Mutator methods
+        // milks cow once
+        public void milkCow(){
+            numMilkings++;
+        }
+
+        // sets the number of milkings for a cow
+        public void setMilkings(int nm){
+            numMilkings = nm;
+        }
+        
+        // adds a specified number of milkings to a cow
+        public void addMilking(int nma){
+            numMilkings += nma;
+        }
+}
+```
+### 5_5 P2
+Common Errors:
++ Setting a local variable to an instance variable rather than the other way around
++ Attempting to use a local variable in another method
++ Not defining a local variable in a method
++ Using accesor methods like variables
++ Attempting to set an instance variable without a mutator method, i.e. 'two.age = 8'
 ## 5.6 - Writing Methods
 
 ## 5.7 - Static Variables and Methods
