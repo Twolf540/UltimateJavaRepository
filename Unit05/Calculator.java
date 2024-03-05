@@ -37,7 +37,7 @@ public class Calculator {
         return "Calculator with numbers: " + num1 + " and " + num2 + " and operation " + operation + " and finValue " + finValue;
     }
 
-    public static void main(String[] args) {
+   public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("Please input your first number");
         double in1 = Double.parseDouble(s.nextLine());
@@ -47,9 +47,7 @@ public class Calculator {
         String op1 = s.next();
         s.close();
         Calculator calc1 = new Calculator(in1, op1, in2);
-        System.out.println(calc1);
         calc1.doOperation();
-        System.out.println(calc1);
-        System.out.println(calc1.getValue());
+        System.out.println(calc1.getFirstNum() + " " + calc1.getOperation() + " " + calc1.getSecondNum() + " = " + calc1.getValue());
     }
 }
