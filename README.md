@@ -75,6 +75,13 @@
 - [5.9 this Keyword](Unit05/Topic5_9ThisKeyword.java)
 - [5.10 Ethical and Social Implications of Computing Systems](Unit05/Topic5_10EthicalAndSocialImplicationsOfComputingSystems.java)
 
+### [Unit 6 - Array](Unit06/README.md)
+
+- [6.1 - Array Creation and Access](Unit06/Topic6_1ArrayCreationAndAccess.java)
+- [6.2 - Traversing Arrays](Unit06/Topic6_2TraversingArrays.java)
+- [6.3 - Enhanced for Loop for Arrays](Unit06/Topic6_3EnhancedForLoopForArrays.java)
+- [6.4 - Developing Algorithms Using Arrays](Unit06/Topic6_4DevelopingAlgorithmsUsingArrays.java)
+
 ## Course Calendar
 
 | Mon                                                                    | Tue                                                                                 | Wed                                                          | Thu                                                                | Fri                                                                   |
@@ -88,7 +95,9 @@
 | **12** <br> NO SCHOOL                                                  | **13** <br> Programming Assignment                                                  | **14** <br> Videos & MCQ on 4.4 & 4.5                        | **15** <br> FRQ on 4.3 & 4.4                                       | **16** <br> Unit 4 MCQ Progress Check                                 |
 | **19** <br> Unit 4 FRQ Progress Check                                  | **20** <br> Videos & MCQ on 5.1 <br> Videos & MCQs on 5.2 <br> Videos & MCQs on 5.3 | **21** <br> Videos & MCQ on 5.4 <br> Videos & MCQ on 5.5     | **22** <br> CONFERENCES                                            | **23** <br> NO SCHOOL                                                 |
 | **26** <br> Videos & MCQ on 5.6 <br> Videos & MCQ on 5.7               | **27** <br> PRE-ACT & ACT TESTING                                                   | **28** <br> Videos & MCQ on 5.8 <br> Videos & MCQ on 5.9     | **29** <br> FRQs on 5.5 & 5.8 <br> Video on 5.10                   | **1st Mar** <br> Unit 5 MCQ Progress Check                            |
-| **4** <br> _Unit 5 FRQ Progress Check_                                 | **5** <br>                                                                          | **6**                                                        | **7**                                                              | **8** SPRING BREAK                                                    |
+| **4** <br> Unit 5 FRQ Progress Check                                   | **5** <br> Videos & MCQ on 6.1 <br> Videos & MCQs on 6.2                            | **6** <br> _Videos & MCQ on 6.3 <br> Videos & MCQs on 6.4_   | **7** <br> _Unit 6 Programming Assignment & FRQs_                  | **8** <br> SPRING BREAK                                               |
+| **11** <br> SPRING BREAK                                               | **12** <br> SPRING BREAK                                                            | **13** <br> SPRING BREAK                                     | **14** <br> SPRING BREAK                                           | **15** <br> SPRING BREAK                                              |
+| **18** <br> _Unit 6 MCQ Progress Check_                                | **19** <br> _Unit 6 FRQ Progress Check_                                             | **20**                                                       | **21**                                                             | **22**                                                                |
 
 ## Gradebook Categories
 
