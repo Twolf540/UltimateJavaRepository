@@ -71,6 +71,10 @@ public class ArrayManipulator{
 ```
 ## 6.2 - Traversing Arrays
 ### 6_2 P1
+Traversing an array - Accessing (and possibly changing) each element in an array
+
+All examples of accessing/setting indexes. Just different variations each time.
+### 6_2 P2
 
 ## 6.3 - Enhanced for Loop for Arrays
 
