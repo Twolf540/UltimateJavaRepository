@@ -1,4 +1,4 @@
-package Unit06;
+package SideProjects;
 
 public class PalindromicNumbers {
     private int[] list;

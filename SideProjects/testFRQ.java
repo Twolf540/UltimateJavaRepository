@@ -1,4 +1,4 @@
-package Unit04;
+package SideProjects;
 
 public class testFRQ {
     public static void longestStreak(String str){

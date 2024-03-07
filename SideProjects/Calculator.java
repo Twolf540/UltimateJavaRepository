@@ -1,4 +1,4 @@
-package Unit05;
+package SideProjects;
 
 import java.util.Scanner;
 
