@@ -149,3 +149,79 @@ Arrays.toString(a1);
 ```
 ## 6.4 - Developing Algorithms Using Arrays
 ### 6_4 P1
+For Maximum:
+```java
+private double findMax(double [] values){
+    double max = values[0];
+    for(int index = 1; index < values.length; index++){
+        if(values[index] > max){
+            max = values[index];
+        } 
+    }
+    return max;
+}
+```
+For Minimum:
+```java
+private double findMin(double [] values){
+    double min = values[0];
+    for(int index = 1; index < values.length; index++){
+        if(values[index] < min){
+            min = values[index];
+        } 
+    }
+    return min;
+}
+```
+Or:
+```java
+private double findMin(double [] values){
+    double min = Integer.MAX_VALUE;
+    for(int currentValue : values){
+        if(currentValue < min){
+            min = currentValue;
+        } 
+    }
+    return min;
+}
+```
+### 6_4 P2
+```java
+private double findAvg(DebugDuck [] dbgDuck){
+    double totalValue = 0;
+    for(double dbg: dbgDuck){
+        totalValue += dbg;
+    }
+    totalValue = (totalValue / (dbgDuck.length - 1))
+    return totalValue;
+}
+```
+### 6_4 P3
+Shifting array contents to the right:
+```java
+int [] numbers = {1, 2, 3, 4, 5};
+int [] shifted = new int[numbers.length];
+int shift = 8;
+for (int index = 0; index , numbers.length; index++){
+    shifted [Math.abs((index + shift) % numbers.length)] = numbers{index};
+}
+numbers = shifted;
+for (int num: numbers){
+    System.out.println(num + " ");
+}
+```
+Shifting array contents to the left
+```java
+String [] words = {"alpha", "beta", "gamma", "delta"};
+int shiftWord = 2;
+for (int count = 0; count < shiftWord; count++){
+    String temp = word[0];
+    for(int index = 0; index < words.length - 1; index++){
+        words[index] = words[index + 1];
+    }
+    words[words.length - 1] = temp;
+}
+for(String word : words){
+    System.out.println(word + " ");
+}
+```

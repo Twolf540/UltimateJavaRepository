@@ -32,7 +32,15 @@ public class Calculator {
     public double getValue() {
         return finValue;
     }
-
+    public double getFirstNum() {
+        return num1;
+    }
+    public double getSecondNum() {
+        return num2;
+    }
+    public String getOperation() {
+        return operation;
+    }
     public String toString() {
         return "Calculator with numbers: " + num1 + " and " + num2 + " and operation " + operation + " and finValue " + finValue;
     }
