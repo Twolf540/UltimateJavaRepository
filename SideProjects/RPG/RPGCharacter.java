@@ -12,11 +12,13 @@ public class RPGCharacter{
         name = n;
         class = c;
         SP = 30;
+        //Swordsman: High DEF, Low ATK
         if(c == "Swordsman"){
             HP = (int)(Math.random()*41) + 10
             ATK = (int)(Math.random()*11) + 10
             DEF = (int)(Math.random()*31) + 20
         }
+        //Archer: Low DEF, High ATK
         if(c == "Archer"){
             HP = (int)(Math.random()*41) + 10
             ATK = (int)(Math.random()*31) + 20

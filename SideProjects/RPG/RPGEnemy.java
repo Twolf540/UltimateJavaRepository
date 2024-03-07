@@ -9,6 +9,7 @@ public class RPGEnemy{
     private static int orcCount;
     public RPGEnemy(String t){
         type = t;
+        //skeletons, slimes, witch
         if(t == "Goblin"){
             name = ("Goblin" + (goblinCount + 1));
             HP = (int)((Math.random()*15)+1)
@@ -23,5 +24,17 @@ public class RPGEnemy{
             DEF = (int)((Math.random()*25)+1)
             orcCount++;
         }
+    }
+    public int getHP(){
+        return HP;
+    }
+    public int getDEF(){
+        return DEF;
+    }
+    public String getName(){
+        return name;
+    }
+    public void hpChange(int d){
+        HP -= d;
     }
 }
