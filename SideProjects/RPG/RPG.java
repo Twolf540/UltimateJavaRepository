@@ -6,23 +6,29 @@ public class RPG{
     //method that takes a character and a targeted enemy and uses a roll to determine whether an attack succeeds.
     public static void playerTurn(RPGCharacter ch, RPGEnemy en){
         int skillPoints = ch.getSP();
-        roll = ((Math.random()*20) + 1);
+        roll = (int)((Math.random()*20) + 1);
         if(roll >= 10){
             System.out.println("Your attack suceeded.");
-            int tempHP = en.getHP;
+            int tempHP = en.getHP();
             en.hpChange(((int)(en.getDEF())/10)*ch.getATK());
-            System.out.println(en.getName()+" lost "+(tempHP-en.getHP)+" HP. It now has now have "+(en.getHP)+" HP");
+            System.out.println(en.getName()+" lost "+(tempHP-en.getHP())+" HP. It now has "+(en.getHP())+" HP");
         }
         else{
             System.out.println("Your attack failed. The enemy attacks you.");
-            int tempHP = ch.getHP;
+            int tempHP = ch.getHP();
             ch.hpChange(((int)(ch.getDEF())/10)*en.getATK());
-            System.out.println("You lost "+(tempHP-ch.getHP)+" HP. You now have "+(ch.getHP)+" HP");
+            System.out.println("You lost "+(tempHP-ch.getHP())+" HP. You now have "+(ch.getHP())+" HP");
         }
     }
     public static void main(String[] args) {
         RPGCharacter ex = new RPGCharacter("ex","Swordsman");
         RPGEnemy exen = new RPGEnemy("Goblin");
+        System.out.println(ex.getHP());
+        System.out.println(exen.getHP());
+        System.out.println(ex.getATK());
+        System.out.println(exen.getATK());
+        System.out.println(ex.getDEF());
+        System.out.println(exen.getDEF());
         RPG.playerTurn(ex, exen);
     }
 }

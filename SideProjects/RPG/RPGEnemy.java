@@ -12,26 +12,24 @@ public class RPGEnemy{
         //skeletons, slimes, witch
         if(t == "Goblin"){
             name = ("Goblin" + (goblinCount + 1));
-            HP = (int)((Math.random()*15)+1);
-            ATK = (int)((Math.random()*15)+1);
-            DEF = (int)((Math.random()*15)+1);
+            HP = (int)((Math.random()*15)+10);
+            ATK = (int)((Math.random()*15)+10);
+            DEF = (int)((Math.random()*15)+10);
             goblinCount++;
         }
         if(t == "Orc"){
             name = ("Orc" + (goblinCount + 1));
-            HP = (int)((Math.random()*25)+1);
-            ATK = (int)((Math.random()*25)+1);
-            DEF = (int)((Math.random()*25)+1);
+            HP = (int)((Math.random()*25)+10);
+            ATK = (int)((Math.random()*25)+10);
+            DEF = (int)((Math.random()*25)+10);
             orcCount++;
-        }
-        else{
-            HP = 1;
-            ATK = 0;
-            DEF = 0;
         }
     }
     public int getHP(){
         return HP;
+    }
+    public int getATK(){
+        return ATK;
     }
     public int getDEF(){
         return DEF;
