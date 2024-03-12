@@ -23,12 +23,6 @@ public class RPG{
     public static void main(String[] args) {
         RPGCharacter ex = new RPGCharacter("ex","Swordsman");
         RPGEnemy exen = new RPGEnemy("Goblin");
-        System.out.println(ex.getHP());
-        System.out.println(exen.getHP());
-        System.out.println(ex.getATK());
-        System.out.println(exen.getATK());
-        System.out.println(ex.getDEF());
-        System.out.println(exen.getDEF());
         RPG.playerTurn(ex, exen);
     }
 }
