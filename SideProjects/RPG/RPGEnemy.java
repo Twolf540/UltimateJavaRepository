@@ -1,5 +1,6 @@
 package SideProjects;
 public class RPGEnemy{
+    //stats for the enemy
     private int HP;
     private int ATK;
     private int DEF;
@@ -10,6 +11,7 @@ public class RPGEnemy{
     public RPGEnemy(String t){
         type = t;
         //skeletons, slimes, witch
+        //creates a name and stats for the enemy based on its type
         if(t == "Goblin"){
             name = ("Goblin" + (goblinCount + 1));
             HP = (int)((Math.random()*15)+10);

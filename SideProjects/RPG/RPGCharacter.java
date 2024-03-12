@@ -1,6 +1,7 @@
 package SideProjects;
 
 public class RPGCharacter{
+    //stats for the character
     private int HP;
     private int SP;
     private int ATK;
