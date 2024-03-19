@@ -12,7 +12,8 @@ public class RPG{
         //seperates the two attack types
         if(attackType == "normal"){
             /*checks to see if the roll was succesful.
-            Reduces enemy/character HP based on the result and then prints out that HP change and the object's new HP*/
+            Reduces enemy/character HP based on the result and then prints out that HP change and the object's new HP\
+            If either you or the enemy was reduced to 0 or less HP, prints out a defeat message*/
             if(roll >= 10){
                 System.out.println("Your attack suceeded.");
                 int tempHP = en.getHP();
