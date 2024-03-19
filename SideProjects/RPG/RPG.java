@@ -18,12 +18,18 @@ public class RPG{
                 int tempHP = en.getHP();
                 en.hpChange(((int)(en.getDEF())/10)*ch.getATK());
                 System.out.println(en.getName()+" lost "+(tempHP-en.getHP())+" HP. It now has "+(en.getHP())+" HP");
+                if(en.getHP() <= 0){
+                    System.out.println("You have defeated " + en.getName());
+                }
             }
             else{
                 System.out.println("Your attack failed. The enemy attacks you.");
                 int tempHP = ch.getHP();
                 ch.hpChange(((int)(ch.getDEF())/10)*en.getATK());
                 System.out.println("You lost "+(tempHP-ch.getHP())+" HP. You now have "+(ch.getHP())+" HP");
+                if(ch.getHP() <= 0){
+                    System.out.println("You have been defeated");
+                }
             }
         }
         if(attackType == "skill"){
@@ -48,6 +54,8 @@ public class RPG{
     public static void main(String[] args) {
         RPGCharacter ex = new RPGCharacter("ex","Swordsman");
         RPGEnemy exen = new RPGEnemy("Goblin");
+        System.out.println("You have " + ex.getHP() + " HP");
+        System.out.println("Your enemy has " + exen.getHP() + " HP");
         RPG.playerTurn(ex, exen, "normal");
     }
 }
