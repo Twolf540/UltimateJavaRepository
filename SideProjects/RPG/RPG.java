@@ -1,4 +1,4 @@
-package SideProjects;
+package SideProjects.RPG;
 
 public class RPG{
     // creates a roll object

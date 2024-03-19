@@ -1,4 +1,4 @@
-package SideProjects;
+package SideProjects.RPG;
 
 public class RPGCharacter{
     //stats for the character

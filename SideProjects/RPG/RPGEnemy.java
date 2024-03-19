@@ -1,4 +1,4 @@
-package SideProjects;
+package SideProjects.RPG;
 public class RPGEnemy{
     //stats for the enemy
     private int HP;
