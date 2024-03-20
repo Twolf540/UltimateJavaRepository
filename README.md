@@ -82,6 +82,16 @@
 - [6.3 - Enhanced for Loop for Arrays](Unit06/Topic6_3EnhancedForLoopForArrays.java)
 - [6.4 - Developing Algorithms Using Arrays](Unit06/Topic6_4DevelopingAlgorithmsUsingArrays.java)
 
+### [Unit 7 - `ArrayList`](Unit07/README.md)
+
+- [7.1 - Introduction to `ArrayList`](Unit07/Topic7_1IntroductionToArrayList.java)
+- [7.2 - `ArrayList` Methods](Unit07/Topic7_2ArrayListMethods.java)
+- [7.3 - Traversing `ArrayList`s](Unit07/Topic7_3TraversingArrayLists.java)
+- [7.4 - Developing Algorithms Using `ArrayList`s](Unit07/Topic7_4DevelopingAlgorithmsUsingArrayLists.java)
+- [7.5 - Searching](Unit07/Topic7_5Searching.java)
+- [7.6 - Sorting](Unit07/Topic7_6Sorting.java)
+- [7.7 - Ethical Issues Around Data Collection](Unit07/Topic7_7EthicalIssuesAroundDataCollection.java)
+
 ## Course Calendar
 
 | Mon                                                                                                                         | Tue                                                                                 | Wed                                                          | Thu                                                                                                                                                                  | Fri                                                                   |
@@ -97,7 +107,8 @@
 | **26** <br> Videos & MCQ on 5.6 <br> Videos & MCQ on 5.7                                                                    | **27** <br> PRE-ACT & ACT TESTING                                                   | **28** <br> Videos & MCQ on 5.8 <br> Videos & MCQ on 5.9     | **29** <br> FRQs on 5.5 & 5.8 <br> Video on 5.10                                                                                                                     | **1st Mar** <br> Unit 5 MCQ Progress Check                            |
 | **4** <br> Unit 5 FRQ Progress Check                                                                                        | **5** <br> Videos & MCQ on 6.1 <br> Videos & MCQs on 6.2                            | **6** <br> Videos & MCQ on 6.3 <br> Videos & MCQs on 6.4     | **7** <br> Unit 6 MCQ Progress Check <br> If time: practice on CodingBat [Array1](https://codingbat.com/java/Array-1) & [Array2](https://codingbat.com/java/Array-2) | **8** <br> SPRING BREAK                                               |
 | **11** <br> SPRING BREAK                                                                                                    | **12** <br> SPRING BREAK                                                            | **13** <br> SPRING BREAK                                     | **14** <br> SPRING BREAK                                                                                                                                             | **15** <br> SPRING BREAK                                              |
-| **18** <br> FRQs <br> CodingBat [Array1](https://codingbat.com/java/Array-1) & [Array2](https://codingbat.com/java/Array-2) | **19** <br> _Unit 6 FRQ Progress Check_                                             | **20**                                                       | **21**                                                                                                                                                               | **22**                                                                |
+| **18** <br> FRQs <br> CodingBat [Array1](https://codingbat.com/java/Array-1) & [Array2](https://codingbat.com/java/Array-2) | **19** <br> Unit 6 FRQ Progress Check                                               | **20** <br> Videos & MCQs on 7.1 <br> Videos & MCQs on 7.2   | **21** <br> Videos & MCQs on 7.3 <br> Videos & MCQs on 7.4                                                                                                           | **22** <br> Videos & MCQs on 7.5 <br> Videos & MCQs on 7.6            |
+| **25** <br> Video on 7.7 <br> FRQs                                                                                          | **26** <br> Unit 7 MCQ Progress Check                                               | **27** <br> Unit 7 FRQ Progress Check                        | **28** <br> NO CLASS (State Assessments)                                                                                                                             | **29** <br>                                                           |
 
 ## Gradebook Categories
 
