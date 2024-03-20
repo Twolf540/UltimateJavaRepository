@@ -51,6 +51,7 @@ When writing a method, declare the type of ArrayList when one is used as a param
 (ArrayList<String> a1) vs (ArrayList a1)
 ### 7_2 P3
 
+
 ## 7.3 - Traversing `ArrayList`s
 
 ## 7.4 - Developing Algorithms Using `ArrayList`s
