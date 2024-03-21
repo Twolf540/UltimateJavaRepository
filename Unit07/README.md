@@ -30,10 +30,11 @@ public class Topic7_1IntroductionToArrayList {
 ## 7.2 - `ArrayList` Methods
 ### 7_2 P1
 ArrayList Methods:
-+ size
++ size()
 + add(obj) & add(index, obj)
 + remove(index)
-+ get
++ get(index)
++ set(index, obj)
 ArrayList methods, such as add and remove, return values when used. You could use this to, for example, create a new object that is a copy of an object in an ArrList while removing it using the remove method.
 ```java
 public static void main(String args[]){
@@ -50,10 +51,21 @@ When writing a method, declare the type of ArrayList when one is used as a param
 
 (ArrayList<String> a1) vs (ArrayList a1)
 ### 7_2 P3
-
-
+```java
+public ArrayList<String> getDelimitersList (String[] tokens){
+    ArrayList<String> d = new ArrayList<String>();
+    for(String str: tokens){
+        d.add(str);
+    }
+    return d;
+}
+```
 ## 7.3 - Traversing `ArrayList`s
+### 7_3 P1
 
+### 7_3 P2
+
+### 7_3 P3
 ## 7.4 - Developing Algorithms Using `ArrayList`s
 
 ## 7.5 - Searching
