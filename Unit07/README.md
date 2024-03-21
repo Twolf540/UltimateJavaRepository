@@ -62,10 +62,80 @@ public ArrayList<String> getDelimitersList (String[] tokens){
 ```
 ## 7.3 - Traversing `ArrayList`s
 ### 7_3 P1
-
+```java
+public static void main(String[] args) {
+        ArrayList<String> roster = new ArrayList<String>();
+        int sum = 0;
+        for (int i = 0; i <= roster.size() - 1; i++){
+            sum = sum + roster.get(i).length();
+        }
+        System.out.println(sum);
+    }
+```
+```java
+public static void main(String[] args) {
+    ArrayList<Double> grades = new ArrayList<Double>();
+    for (int i = 0; i <= grades.size() - 1; i++){
+        if(grades.get(i) < 70.0){
+            grades.remove(i);
+            i--;
+        }
+    }
+}
+```
 ### 7_3 P2
-
+```java
+public static void main(String[] args) {
+    ArrayList<String> roster = new ArrayList<String>();
+    int sum = 0;
+    for(String t : roster){
+        sum += t.length();
+    }
+    System.out.println("You need" + sum + " characters");
+}
+```
 ### 7_3 P3
+Common Mistakes:
++ Forgetting to import ArrayList
++ Declaring an ArrayList with a primitive date type
++ Forgetting to include ()
++ Not specifying the data type for the ArrayList
+
+Common Mistakes when Traversing an ArrayList:
++ Attempting to update ArrayList while in an enhanced for loop
++ Changing the size of an ArrayList while in an enhanced for loop
++ Removing an element from ArrayList without correcting the for loop to account for the change
+
+Mistakes:
++ Confusing an array with an ArrayList
+    + Using Brackets
+    + .length() vs .size()
+    + Trying to access an element without using .get()
+```java
+public static void swapConsecutive(ArrayList<Double> myList){
+    for(int i = 0; i <= myList.size() - 1; i = i + 2){
+        double u = myList.get(i);
+        myList.set(i, myList.get(i + 1));
+        myList.set(i + 1, u);
+    }
+}
+```
+```java
+public static void display(ArrayList<String> myList){
+        System.out.println(myList);
+    }
+```
+```java
+public static ArrayList<Integer> duplicate(ArrayList<Integer> myList, int n){
+    ArrayList<Integer> temp = new ArrayList<Integer>();
+    for(int i = 1; i <= n; i++){
+        for(int u = 0; u <= myList.size(); u++){
+            temp.add(myList.get(u));
+        }
+    }
+    return temp;
+}
+```
 ## 7.4 - Developing Algorithms Using `ArrayList`s
 
 ## 7.5 - Searching
