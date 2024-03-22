@@ -171,12 +171,90 @@ private Integer findSum(ArrayList<Integer> values){
 ```
 ## 7.5 - Searching
 ### 7_5 P1
-
+Linear Searching - Searching one element at a time from left to right or right to left. There is no need to track the index since you search every element. You compare each element one at a time until an element matches your desired element.
++ Linear Searching can be used in both arrays and ArrayList
++ Typically Linear Searching is done by a for loop
 ### 7_5 P2
+When comparing an integer or double, use ==
 
+When comparing an object, use .equals
+
+```java
+ public int whereIsMyNumber(int magicNumber, int[] myNumbers){
+        for(int index = 0; index < myNumbers.length; index++){
+            if(myNumbers[index] == magicNumber){
+                return index;
+            }
+        }
+        return -1;
+    }
+```
+```java
+public int where(double magicNumber, ArrayList<Double> realNumbers, double delta){
+        for (int index = 0; index < realNumbers.size(); index++){
+            if(Math.abs(magicNumber - realNumbers.get(index)) < delta){
+                return index;
+            }
+        }
+        return -1;
+    }
+```
+```java
+public int findTheWord(String searchedPhrase, ArrayList<Book> myBooks){
+    for(int index = 0; index < myBooks.size(); index++){
+        Book currentBook = myBooks.get(index);
+        String currentPhrase = currentBook.getDescription;
+        if(currentPhrase.equals(searchedPhrase)){
+            return index;
+        }
+    }
+    return -1;
+}
+```
 ### 7_5 P3
+Order: You need to adjust within the loop when removing values from an array or arrayList and searching from left to right
+
+EFL: You can use enhanced for loops, but only if you're checking for the existence of an element, not its index
+
+Going Faster: Making assumptions about unsorted data can result in errors. If you know how the data is sorted, you can make some modifications to make the loop faster
 ## 7.6 - Sorting
 ### 7_6 P1
+Selection Sort: Finds the max or min of compared values and swaps or doesn't swap them accordingly
+```java
+public void sortArray(double[] myDucks)
+for(int outerLoop = 0; outerLoop < myDucks.length; outerLoop++){
+    int minIndex = outerLoop;
+    for(int inner = outerLoop + 1; inner < myDucks.length; inner++){
+        if(myDucks[inner].compareto(myDucks[minIndex]) < 0){
+            minIndex = inner;
+        }
+    }
+    if(minIndex != outerLoop){
+        swapItems(minIndex, outerLoop, myDucks);
+    }
+}
+public void swapItems(int mi, int ol, Object[] arrayOfStuff){
+    Object thirdHand = arrayOfStuff[mi];
+    arrayOfStuff[mi] = arrayOfStuff[ol];
+    arrayOfStuff[ol] = thirdHand;
+}
+```
 ### 7_6 P2
+Insertion Sort: Builds a sorted structure as it proceeds. It inserts each value it finds at the appropriate location in the data structure. Often done by a while loop
+```java
+for(int outer = 1; outer < randomList.size(); outer++){
+    DebugDuck tested = randomList.get(outer);
+    int inner = outer - 1;
+    while(inner >= 0 && tested.compareTo(randomList.get(inner)) < 0){
+        randomList.set(inner + 1, randomList.get(inner));
+        inner--;
+    }
+    randomList.set(inner + 1, tested);
+}
+```
+Insertion sorts can be stopped, unlike a selection sort.
 ### 7_6 P3
+Counting steps - checks the efficiency of a code segment based on the number of lines and how many times that the segment iterates
+
+Efficieny is NOT always better
 ## 7.7 - Ethical Issues Around Data Collection
