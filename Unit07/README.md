@@ -137,9 +137,46 @@ public static ArrayList<Integer> duplicate(ArrayList<Integer> myList, int n){
 }
 ```
 ## 7.4 - Developing Algorithms Using `ArrayList`s
-
+### 7_4 P1
+```java
+private double findMax(ArrayList<Double> values){
+    double max = values.get(0);
+    for(int index = 1; index < values.size(); index++){
+        if(values.get(index) > max){
+        max = values.get(index);
+        }
+    }
+    return max;
+}
+```
+```java
+private double findMin(ArrayList<Double> values){
+    double min = Integer.MAX_VALUE;
+    for(Double currentValue : values){
+        if(currentValue < min){
+            min = currentValue;
+        }
+    }
+    return min;
+}
+```
+```java
+private Integer findSum(ArrayList<Integer> values){
+    int sum = 0;
+    for(Integer currentValue : values){
+        sum += currentValue;
+    }
+    return sum;
+}
+```
 ## 7.5 - Searching
+### 7_5 P1
 
+### 7_5 P2
+
+### 7_5 P3
 ## 7.6 - Sorting
-
+### 7_6 P1
+### 7_6 P2
+### 7_6 P3
 ## 7.7 - Ethical Issues Around Data Collection

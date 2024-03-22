@@ -1,5 +1,5 @@
 package Unit07;
-import java.util.ArrayList;
+// import java.util.ArrayList;
 public class Topic7_3TraversingArrayLists {
     // public static void main(String[] args) {
     //     ArrayList<String> roster = new ArrayList<String>();
@@ -36,13 +36,13 @@ public class Topic7_3TraversingArrayLists {
     // public static void display(ArrayList<String> myList){
     //     System.out.println(myList);
     // }
-    public static ArrayList<Integer> duplicate(ArrayList<Integer> myList, int n){
-        ArrayList<Integer> temp = new ArrayList<Integer>();
-        for(int i = 1; i <= n; i++){
-            for(int u = 0; u <= myList.size(); u++){
-                temp.add(myList.get(u));
-            }
-        }
-        return temp;
-    }
+    // public static ArrayList<Integer> duplicate(ArrayList<Integer> myList, int n){
+    //     ArrayList<Integer> temp = new ArrayList<Integer>();
+    //     for(int i = 1; i <= n; i++){
+    //         for(int u = 0; u <= myList.size(); u++){
+    //             temp.add(myList.get(u));
+    //         }
+    //     }
+    //     return temp;
+    // }
 }
