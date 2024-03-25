@@ -259,3 +259,6 @@ Counting steps - checks the efficiency of a code segment based on the number of 
 Efficieny is NOT always better
 ## 7.7 - Ethical Issues Around Data Collection
 ### 7_7 P1
+Removing data - You can remove data as you go that you dont need in order to seperate different pieces of a users data. This will make it harder for someone to connect that data to the person or to even find the data in general
+
+.hashCode() returns the value of a string in hashcode
