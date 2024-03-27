@@ -1,20 +1,30 @@
 package SideProjects.RPG;
 
 public class RPG{
+    public static int NORMAL_ATTACK = 1;
+    public static int SKILL_ATTACK = 2;
+
+    public static enum Action {
+        NORMAL, SKILL, DEFEND, SPECIAL_DEFEND;
+    }
+
+
     // creates a roll object
-    private static int roll = 0;
+    private static int chRoll = 0;
+    private static int enRoll = 0;
     //method that takes a character and a targeted enemy and uses a roll to determine whether an attack succeeds.
     public static void playerTurn(RPGCharacter ch, RPGEnemy en, String t){
         //gets the neccesary variables to do an attack
         int skillPoints = ch.getSP();
-        roll = (int)((Math.random()*20) + 1);
+        chRoll = (int)((Math.random()*20) + 1);
+        enRoll = (int)((Math.random()*20) + 1);
         String attackType = t;
         //seperates the two attack types
-        if(attackType == "normal"){
+        if(attackType == "normal attack"){
             /*checks to see if the roll was succesful.
             Reduces enemy/character HP based on the result and then prints out that HP change and the object's new HP\
             If either you or the enemy was reduced to 0 or less HP, prints out a defeat message*/
-            if(roll >= 10){
+            if(chRoll >= 10){
                 System.out.println("Your attack suceeded.");
                 int tempHP = en.getHP();
                 en.hpChange(((int)(en.getDEF())/10)*ch.getATK());
@@ -36,7 +46,7 @@ public class RPG{
         if(attackType == "skill"){
                         /*checks to see if the roll was succesful.
             Reduces enemy/character HP based on the result and then prints out that HP change and the object's new HP*/
-            if(roll >= 10){
+            if(chRoll >= 10){
                 System.out.println("Your attack suceeded.");
                 int tempHP = en.getHP();
                 en.hpChange(((int)(en.getDEF())/10)*ch.getATK());
@@ -48,6 +58,78 @@ public class RPG{
                 int tempHP = ch.getHP();
                 ch.hpChange(((int)(ch.getDEF())/10)*en.getATK());
                 System.out.println("You lost "+(tempHP-ch.getHP())+" HP. You now have "+(ch.getHP())+" HP");
+                ch.spChange(2);
+            }
+        }
+        if(attackType == "defend"){
+            /*checks to see if the roll was succesful.
+            If the roll succeeded, rolls another die to check to see whether the player gets hit or counterattacks. 
+            If the second roll succeeds, you get hit for reduced HP. If the initial player roll fails, the player is attack normally by the enemy*/
+            if(chRoll >= 10){
+                System.out.println("Your defense suceeded.");
+                if(enRoll >= 10){
+                    int tempHP = ch.getHP();
+                    ch.hpChange(((int)(en.getDEF() + 10)/10)*en.getATK());
+                    System.out.println("You lost "+(tempHP-ch.getHP())+" HP. You now have "+(ch.getHP())+" HP");
+                    if(ch.getHP() <= 0){
+                        System.out.println("You have been defeated");
+                    }
+                }
+                else{
+                    System.out.println("The enemy's attack failed. You counterattack");
+                    int tempHP = en.getHP();
+                    en.hpChange(((int)(en.getDEF())/10)*(ch.getATK() + 10));
+                    System.out.println(en.getName()+" lost "+(tempHP-en.getHP())+" HP. It now has "+(en.getHP())+" HP");
+                    if(en.getHP() <= 0){
+                        System.out.println("You have defeated " + en.getName());
+                }
+
+                }
+            }
+            else{
+                System.out.println("Your defense failed. The enemy attacks you.");
+                int tempHP = ch.getHP();
+                ch.hpChange(((int)(en.getDEF())/10)*en.getATK());
+                System.out.println("You lost "+(tempHP-ch.getHP())+" HP. You now have "+(ch.getHP())+" HP");
+                if(ch.getHP() <= 0){
+                    System.out.println("You have been defeated");
+                }
+            }
+        }
+        if(attackType == "special defend"){
+            /*checks to see if the roll was succesful.
+            Reduces enemy/character HP based on the result and then prints out that HP change and the object's new HP\
+            If either you or the enemy was reduced to 0 or less HP, prints out a defeat message*/
+            if(chRoll >= 10){
+                System.out.println("Your defense suceeded.");
+                if(enRoll >= 10){
+                    int tempHP = ch.getHP();
+                    ch.hpChange(((int)(en.getDEF() + 10)/15)*en.getATK());
+                    System.out.println("You lost "+(tempHP-ch.getHP())+" HP. You now have "+(ch.getHP())+" HP");
+                    if(ch.getHP() <= 0){
+                        System.out.println("You have been defeated");
+                    }
+                    ch.spChange(2);
+                }
+                else{
+                    System.out.println("The enemy's attack failed. You counterattack");
+                    int tempHP = en.getHP();
+                    en.hpChange(((int)(en.getDEF())/10)*(ch.getATK() + 15));
+                    System.out.println(en.getName()+" lost "+(tempHP-en.getHP())+" HP. It now has "+(en.getHP())+" HP");
+                    if(en.getHP() <= 0){
+                        System.out.println("You have defeated " + en.getName());
+                    }
+                    ch.spChange(2);
+                }
+            }
+            else{
+                System.out.println("Your defense failed. The enemy attacks you.");
+                int tempHP = ch.getHP();
+                ch.hpChange(((int)(ch.getDEF())/10)*en.getATK());
+                System.out.println("You lost "+(tempHP-ch.getHP())+" HP. You now have "+(ch.getHP())+" HP");
+                if(ch.getHP() <= 0){
+                    System.out.println("You have been defeated");
+                }
                 ch.spChange(2);
             }
         }
