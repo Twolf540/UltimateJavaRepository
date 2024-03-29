@@ -17,13 +17,13 @@ public class Topic7_6Sorting {
 //     arrayOfStuff[mi] = arrayOfStuff[ol];
 //     arrayOfStuff[ol] = thirdHand;
 // }
-for(int outer = 1; outer < randomList.size(); outer++){
-    DebugDuck tested = randomList.get(outer);
-    int inner = outer - 1;
-    while(inner >= 0 && tested.compareTo(randomList.get(inner)) < 0){
-        randomList.set(inner + 1, randomList.get(inner));
-        inner--;
-    }
-    randomList.set(inner + 1, tested);
-}
+// for(int outer = 1; outer < randomList.size(); outer++){
+//     DebugDuck tested = randomList.get(outer);
+//     int inner = outer - 1;
+//     while(inner >= 0 && tested.compareTo(randomList.get(inner)) < 0){
+//         randomList.set(inner + 1, randomList.get(inner));
+//         inner--;
+//     }
+//     randomList.set(inner + 1, tested);
+// }
 }
