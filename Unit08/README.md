@@ -40,7 +40,10 @@ name[row][column] = newValue;
 ### 8_1 P3
 Answers:
 B
-C
+D
+```java
+String[][] = new String[10][3];
+```
 ## 8.2 - Transversing 2D Arrays
 ### 8_2 P1
 ### 8_2 P2
