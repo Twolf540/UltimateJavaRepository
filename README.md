@@ -92,6 +92,11 @@
 - [7.6 - Sorting](Unit07/Topic7_6Sorting.java)
 - [7.7 - Ethical Issues Around Data Collection](Unit07/Topic7_7EthicalIssuesAroundDataCollection.java)
 
+### [Unit 8 - 2D Array](Unit08/README.md)
+
+- [8.1 - 2D Arrays](Unit08/Topic8_1_2DArrays.java)
+- [8.2 - Traversing 2D Arrays](Unit08/Topic8_2Traversing2DArrays.java)
+
 ## Course Calendar
 
 | Mon                                                                                                                         | Tue                                                                                 | Wed                                                          | Thu                                                                                                                                                                  | Fri                                                                   |
@@ -108,7 +113,8 @@
 | **4** <br> Unit 5 FRQ Progress Check                                                                                        | **5** <br> Videos & MCQ on 6.1 <br> Videos & MCQs on 6.2                            | **6** <br> Videos & MCQ on 6.3 <br> Videos & MCQs on 6.4     | **7** <br> Unit 6 MCQ Progress Check <br> If time: practice on CodingBat [Array1](https://codingbat.com/java/Array-1) & [Array2](https://codingbat.com/java/Array-2) | **8** <br> SPRING BREAK                                               |
 | **11** <br> SPRING BREAK                                                                                                    | **12** <br> SPRING BREAK                                                            | **13** <br> SPRING BREAK                                     | **14** <br> SPRING BREAK                                                                                                                                             | **15** <br> SPRING BREAK                                              |
 | **18** <br> FRQs <br> CodingBat [Array1](https://codingbat.com/java/Array-1) & [Array2](https://codingbat.com/java/Array-2) | **19** <br> Unit 6 FRQ Progress Check                                               | **20** <br> Videos & MCQs on 7.1 <br> Videos & MCQs on 7.2   | **21** <br> Videos & MCQs on 7.3 <br> Videos & MCQs on 7.4                                                                                                           | **22** <br> Videos & MCQs on 7.5 <br> Videos & MCQs on 7.6            |
-| **25** <br> Video on 7.7 <br> FRQs                                                                                          | **26** <br> Unit 7 MCQ Progress Check                                               | **27** <br> Unit 7 FRQ Progress Check                        | **28** <br> NO CLASS (State Assessments)                                                                                                                             | **29** <br>                                                           |
+| **25** <br> Video on 7.7 <br> FRQs                                                                                          | **26** <br> Unit 7 MCQ Progress Check                                               | **27** <br> Unit 7 FRQ Progress Check                        | **28** <br> NO CLASS (State Assessments)                                                                                                                             | **29** <br> Videos & MCQs on 8.1                                      |
+| **1st Apr** <br> Videos & MCQs on 8.2                                                                                       | **2** <br> Unit 8 FRQs                                                              | **3** <br> Unit 8 MCQ Progress Check                         | **4** <br> Unit 8 FRQ Progress Check                                                                                                                                 | **5** <br>                                                            |
 
 ## Gradebook Categories
 
