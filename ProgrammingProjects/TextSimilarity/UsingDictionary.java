@@ -34,13 +34,22 @@ public class UsingDictionary {
         LevenshteinDistance l = new LevenshteinDistance();
         System.out.println("Please enter your word:");
         String word = scan.next();
-        String fuzzyWord = "";
-        String levenshteinWord = "";
-        for(int i = 0; i < getEnglishWords().length; i++){
-            int score = 0;
-            if(f.fuzzyScore(word, getEnglishWords()[i]) > score){
-
+        String[] allWords = getEnglishWords();
+        int fuzzyIndex = 0;
+        int levenshteinIndex = allWords.length - 1;
+        double fuzzyS = 0;
+        double levenshteinS = l.apply(word, allWords[0]) + 1;
+        for(int i = 0; i < allWords.length; i++){
+            if(f.fuzzyScore(word, allWords[i]) > fuzzyS){
+                fuzzyS = f.fuzzyScore(word, allWords[i]);
+                fuzzyIndex = i;
+            }
+            if(l.apply(word, allWords[i]) < levenshteinS){
+                levenshteinS = l.apply(word, allWords[i]);
+                levenshteinIndex = i;
             }
         }
+        System.out.println("Closest word using fuzzy algorithm was: " + allWords[fuzzyIndex]);
+        System.out.println("Closest word using Levenshtein algorithm was: " + allWords[levenshteinIndex]);
     }
 }
