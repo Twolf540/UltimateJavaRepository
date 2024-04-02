@@ -25,21 +25,21 @@ public class RPG{
             Reduces enemy/character HP based on the result and then prints out that HP change and the object's new HP\
             If either you or the enemy was reduced to 0 or less HP, prints out a defeat message*/
             if(chRoll >= 10){
-                System.out.println("Your attack suceeded.");
+                System.out.println(ch.getName() + "'s attack suceeded.");
                 int tempHP = en.getHP();
                 en.hpChange(((int)(en.getDEF())/10)*ch.getATK());
                 System.out.println(en.getName()+" lost "+(tempHP-en.getHP())+" HP. It now has "+(en.getHP())+" HP");
                 if(en.getHP() <= 0){
-                    System.out.println("You have defeated " + en.getName());
+                    System.out.println(ch.getName() + " defeated " + en.getName());
                 }
             }
             else{
-                System.out.println("Your attack failed. The enemy attacks you.");
+                System.out.println(ch.getName() + "'s attack failed. " + en.getName() + " attacks " + ch.getName() + ".");
                 int tempHP = ch.getHP();
                 ch.hpChange(((int)(ch.getDEF())/10)*en.getATK());
-                System.out.println("You lost "+(tempHP-ch.getHP())+" HP. You now have "+(ch.getHP())+" HP");
+                System.out.println(ch.getName() +" lost "+(tempHP-ch.getHP())+" HP. " +ch.getName() + " now has "+(ch.getHP())+" HP");
                 if(ch.getHP() <= 0){
-                    System.out.println("You have been defeated");
+                    System.out.println(ch.getName() + " has been defeated");
                 }
             }
         }
@@ -47,17 +47,17 @@ public class RPG{
                         /*checks to see if the roll was succesful.
             Reduces enemy/character HP based on the result and then prints out that HP change and the object's new HP*/
             if(chRoll >= 10){
-                System.out.println("Your attack suceeded.");
+                System.out.println(ch.getName() + "'s attack suceeded.");
                 int tempHP = en.getHP();
                 en.hpChange(((int)(en.getDEF())/10)*ch.getATK());
                 System.out.println(en.getName()+" lost "+(tempHP-en.getHP())+" HP. It now has "+(en.getHP())+" HP");
                 ch.spChange(2);
             }
             else{
-                System.out.println("Your attack failed. The enemy attacks you.");
+                System.out.println(ch.getName() + "'s attack failed. " + en.getName() + " attacks " + ch.getName() + ".");
                 int tempHP = ch.getHP();
                 ch.hpChange(((int)(ch.getDEF())/10)*en.getATK());
-                System.out.println("You lost "+(tempHP-ch.getHP())+" HP. You now have "+(ch.getHP())+" HP");
+                System.out.println(ch.getName() +" lost "+(tempHP-ch.getHP())+" HP. " + ch.getName() + " now has "+(ch.getHP())+" HP");
                 ch.spChange(2);
             }
         }
@@ -66,33 +66,33 @@ public class RPG{
             If the roll succeeded, rolls another die to check to see whether the player gets hit or counterattacks. 
             If the second roll succeeds, you get hit for reduced HP. If the initial player roll fails, the player is attack normally by the enemy*/
             if(chRoll >= 10){
-                System.out.println("Your defense suceeded.");
+                System.out.println(ch.getName() + "'s defense suceeded.");
                 if(enRoll >= 10){
                     int tempHP = ch.getHP();
                     ch.hpChange(((int)(en.getDEF() + 10)/10)*en.getATK());
-                    System.out.println("You lost "+(tempHP-ch.getHP())+" HP. You now have "+(ch.getHP())+" HP");
+                    System.out.println(ch.getName() +" lost "+(tempHP-ch.getHP())+" HP. " + ch.getName() + " now has "+(ch.getHP())+" HP");
                     if(ch.getHP() <= 0){
-                        System.out.println("You have been defeated");
+                        System.out.println(ch.getName() + " has been defeated");
                     }
                 }
                 else{
-                    System.out.println("The enemy's attack failed. You counterattack");
+                    System.out.println(en.getName() + "'s attack failed. " + ch.getName() + " counterattacks");
                     int tempHP = en.getHP();
                     en.hpChange(((int)(en.getDEF())/10)*(ch.getATK() + 10));
                     System.out.println(en.getName()+" lost "+(tempHP-en.getHP())+" HP. It now has "+(en.getHP())+" HP");
                     if(en.getHP() <= 0){
-                        System.out.println("You have defeated " + en.getName());
+                        System.out.println(ch.getName() + " defeated " + en.getName());
                 }
 
                 }
             }
             else{
-                System.out.println("Your defense failed. The enemy attacks you.");
+                System.out.println(ch.getName() + "'s defense failed. " + en.getName() + " attacks " + ch.getName() + ".");
                 int tempHP = ch.getHP();
                 ch.hpChange(((int)(en.getDEF())/10)*en.getATK());
-                System.out.println("You lost "+(tempHP-ch.getHP())+" HP. You now have "+(ch.getHP())+" HP");
+                System.out.println(ch.getName() +" lost "+(tempHP-ch.getHP())+" HP. " + ch.getName() + " now has "+(ch.getHP())+" HP");
                 if(ch.getHP() <= 0){
-                    System.out.println("You have been defeated");
+                    System.out.println(ch.getName() + " has been defeated");
                 }
             }
         }
@@ -101,34 +101,34 @@ public class RPG{
             Reduces enemy/character HP based on the result and then prints out that HP change and the object's new HP\
             If either you or the enemy was reduced to 0 or less HP, prints out a defeat message*/
             if(chRoll >= 10){
-                System.out.println("Your defense suceeded.");
+                System.out.println(ch.getName() + "'s defense suceeded.");
                 if(enRoll >= 10){
                     int tempHP = ch.getHP();
                     ch.hpChange(((int)(en.getDEF() + 10)/15)*en.getATK());
-                    System.out.println("You lost "+(tempHP-ch.getHP())+" HP. You now have "+(ch.getHP())+" HP");
+                    System.out.println(ch.getName() +" lost "+(tempHP-ch.getHP())+" HP. " + ch.getName() + " now has "+(ch.getHP())+" HP");
                     if(ch.getHP() <= 0){
-                        System.out.println("You have been defeated");
+                        System.out.println(ch.getName() + " has been defeated");
                     }
                     ch.spChange(2);
                 }
                 else{
-                    System.out.println("The enemy's attack failed. You counterattack");
+                    System.out.println(en.getName() + "'s attack failed. " + ch.getName() + " counterattacks");
                     int tempHP = en.getHP();
                     en.hpChange(((int)(en.getDEF())/10)*(ch.getATK() + 15));
                     System.out.println(en.getName()+" lost "+(tempHP-en.getHP())+" HP. It now has "+(en.getHP())+" HP");
                     if(en.getHP() <= 0){
-                        System.out.println("You have defeated " + en.getName());
+                        System.out.println(ch.getName() + " defeated " + en.getName());
                     }
                     ch.spChange(2);
                 }
             }
             else{
-                System.out.println("Your defense failed. The enemy attacks you.");
+                System.out.println(ch.getName() + "'s defense failed. " + en.getName() + " attacks " + ch.getName() + ".");
                 int tempHP = ch.getHP();
                 ch.hpChange(((int)(ch.getDEF())/10)*en.getATK());
-                System.out.println("You lost "+(tempHP-ch.getHP())+" HP. You now have "+(ch.getHP())+" HP");
+                System.out.println(ch.getName() +" lost "+(tempHP-ch.getHP())+" HP. " + ch.getName() + " now has "+(ch.getHP())+" HP");
                 if(ch.getHP() <= 0){
-                    System.out.println("You have been defeated");
+                    System.out.println(ch.getName() + " has been defeated");
                 }
                 ch.spChange(2);
             }
@@ -137,8 +137,8 @@ public class RPG{
     public static void main(String[] args) {
         RPGCharacter ex = new RPGCharacter("ex","Swordsman");
         RPGEnemy exen = new RPGEnemy("Goblin");
-        System.out.println("You have " + ex.getHP() + " HP");
-        System.out.println("Your enemy has " + exen.getHP() + " HP");
+        System.out.println(ex.getName() + " has " + ex.getHP() + " HP");
+        System.out.println(exen.getName()+ " has " + exen.getHP() + " HP");
         RPG.playerTurn(ex, exen, "normal");
     }
 }

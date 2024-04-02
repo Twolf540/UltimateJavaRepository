@@ -38,6 +38,9 @@ public class RPGCharacter{
     public int getDEF(){
         return DEF;
     }
+    public String getName(){
+        return name;
+    }
     public void hpChange(int d){
         HP -= d;
     }
