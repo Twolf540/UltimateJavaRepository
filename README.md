@@ -97,6 +97,16 @@
 - [8.1 - 2D Arrays](Unit08/Topic8_1_2DArrays.java)
 - [8.2 - Traversing 2D Arrays](Unit08/Topic8_2Traversing2DArrays.java)
 
+### [Unit 9 - Inheritance](Unit09/README.md)
+
+- [9.1 - Creating Superclasses and Subclasses](Unit09/Topic9_1CreatingSuperclassesAndSubclasses.java)
+- [9.2 - Writing Constructors for Subclasses](Unit09/Topic9_2WritingConstructorsForSubclasses.java)
+- [9.3 - Overriding Methods](Unit09/Topic9_3OverridingMethods.java)
+- [9.4 - super Keyword](Unit09/Topic9_4SuperKeyword.java)
+- [9.5 - Creating References Using Inheritance Hierarchies](Unit09/Topic9_5CreatingReferencesUsingInheritanceHierarchies.java)
+- [9.6 - Polymorphism](Unit09/Topic9_6Polymorphism.java)
+- [9.7 - Object Superclass](Unit09/Topic9_7ObjectSuperclass.java)
+
 ## Course Calendar
 
 | Mon                                                                                                                         | Tue                                                                                 | Wed                                                          | Thu                                                                                                                                                                  | Fri                                                                   |
@@ -114,7 +124,9 @@
 | **11** <br> SPRING BREAK                                                                                                    | **12** <br> SPRING BREAK                                                            | **13** <br> SPRING BREAK                                     | **14** <br> SPRING BREAK                                                                                                                                             | **15** <br> SPRING BREAK                                              |
 | **18** <br> FRQs <br> CodingBat [Array1](https://codingbat.com/java/Array-1) & [Array2](https://codingbat.com/java/Array-2) | **19** <br> Unit 6 FRQ Progress Check                                               | **20** <br> Videos & MCQs on 7.1 <br> Videos & MCQs on 7.2   | **21** <br> Videos & MCQs on 7.3 <br> Videos & MCQs on 7.4                                                                                                           | **22** <br> Videos & MCQs on 7.5 <br> Videos & MCQs on 7.6            |
 | **25** <br> Video on 7.7 <br> FRQs                                                                                          | **26** <br> Unit 7 MCQ Progress Check                                               | **27** <br> Unit 7 FRQ Progress Check                        | **28** <br> NO CLASS (State Assessments)                                                                                                                             | **29** <br> Videos & MCQs on 8.1                                      |
-| **1st Apr** <br> Videos & MCQs on 8.2                                                                                       | **2** <br> Unit 8 FRQs                                                              | **3** <br> Unit 8 MCQ Progress Check                         | **4** <br> Unit 8 FRQ Progress Check                                                                                                                                 | **5** <br>                                                            |
+| **1st Apr** <br> Videos & MCQs on 8.2                                                                                       | **2** <br> Unit 8 FRQs                                                              | **3** <br> Unit 8 MCQ Progress Check                         | **4** <br> Unit 8 FRQ Progress Check                                                                                                                                 | **5** <br> NO SCHOOL                                                  |
+| **8** <br> NO SCHOOL                                                                                                        | **9** <br> Videos on 9.1 <br> Videos & MCQ on 9.2                                   | **10** <br> Videos & MCQs on 9.3 <br> Videos & MCQs on 9.4   | **11** <br> Videos & MCQs on 9.5 <br> Videos & MCQs on 9.6                                                                                                           | **12** <br> Videos & MCQ on 9.7 <br> Pet FRQ                          |
+| **15** <br> Meal FRQ                                                                                                        | **16** <br> Unit 9 MCQ Progress Check                                               | **17** <br> Unit 9 FRQ Progress Check                        | **18** <br>                                                                                                                                                          | **19** <br>                                                           |
 
 ## Gradebook Categories
 
