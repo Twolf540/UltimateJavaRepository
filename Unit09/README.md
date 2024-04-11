@@ -134,16 +134,66 @@ Answers:
 + B
 ## 9.5 - Creating References Using Inheritance Hierarchies
 ### 9_5 P1
+Subclasses "are" something from the superclass (is-a)
 
+Superclass arrays/arraylists can contain objects from subclasses
+
+Ex: pencil case class uses an array with pen, pencil, and crayon subclass objects
 ### 9_5 P2
-
-### 9_5 P3
-
+```java
+public class Dwelling{
+    private int numBedrooms;
+    private int numBaths;
+    public Dwelling(int bed, int bath){
+        numBedrooms = bed;
+        numBaths = bath;
+    }
+}
+```
+```java
+public class Apartment{
+    private int leaseLength;
+    public Apartment(int lease, int bed, int bath){
+        super(bed, bath);
+        leaseLength = lease;
+    }
+}
+```
+Answers
++ D
++ E
 ## 9.6 - Polymorphism
 ### 9_6 P1
+A reference variable is polymorphic when it can refer to objects from different classes at different points in the code
+
+A method is considered polymorphic when it is overridden in at least one subclass
+
+An superclass not implicitly extending another class extends the object class
+
+Superclass objects cannot access methods from a subclass
+
+Ex 'Entertainer sally = new Comedian("satire", oneLiners);' can only access methods in the entertainer class. Overridden methods from the comedian class will be used, however. To use a comedian method, sally must be cast as a comedian - '(comedian)sally'
 
 ### 9_6 P2
-
+Answers:
++ C
++ B
 ### 9_6 P3
-
+Answers:
+```java
+public double getCost(){
+    return (COST_PER_OZ * weight);
+}
+```
+```java
+public insuredShippingItem(double w, double iamt){
+    super(w);
+    insuredAmt = iamt;
+}
+```
+```java
+public double getCost(){
+    return (super.getCost() + insuredAmt);
+}
+```
 ## 9.7 - Object Superclass
