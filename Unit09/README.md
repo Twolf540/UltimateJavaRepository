@@ -133,7 +133,17 @@ Answers:
 + C
 + B
 ## 9.5 - Creating References Using Inheritance Hierarchies
+### 9_5 P1
+
+### 9_5 P2
+
+### 9_5 P3
 
 ## 9.6 - Polymorphism
+### 9_6 P1
+
+### 9_6 P2
+
+### 9_6 P3
 
 ## 9.7 - Object Superclass
