@@ -197,3 +197,14 @@ public double getCost(){
 }
 ```
 ## 9.7 - Object Superclass
+### 9_7 P1
+Classes that do not implicitly extend another class extend the object class
+
+Object has a toString but it uses hexadecimal values instead of real values, so it needs to be overridden
+
+```java
+public String toString(){
+    System.out.println("size: " + size + ", material: " + material);
+}
+```
+### 9_7 P2

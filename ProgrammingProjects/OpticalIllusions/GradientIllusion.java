@@ -9,21 +9,39 @@ public class GradientIllusion extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        int r = 0;
-        int gc = 0;
-        int b = 0;
-        for(int i = 0; i < width; i += 5){
-            Color gray = new Color(r, gc ,b);
-            g.setColor(gray);
+        int re1 = 0;
+        int gr1 = 0;
+        int bl1 = 0;
+        int re2 = 200;
+        int gr2 = 200;
+        int bl2 = 200;
+        for(int i = 0; i < width - 5; i += 5){
+            Color gray1 = new Color(re1, gr1 ,bl1);
+            g.setColor(gray1);
             g.fillRect(i, 0, 5, height);
-            if(r < 250){
-                r += 5;
+            if(re1 < 250){
+                re1 += 5;
             }
-            if(gc < 250){
-                r += 5;
+            if(gr1 < 250){
+                gr1 += 5;
             }
-            if(b < 250){
-                r += 5;
+            if(bl1 < 250){
+                bl1 += 5;
+            }
+            System.out.println("just drew a rectangle...");
+        }
+        for(int i = 50; i < width - 70; i += 5){
+            Color gray2 = new Color(re2, gr2 ,bl2);
+            g.setColor(gray2);
+            g.fillRect(i, 75, 5, height - 200);
+            if(re2 > 0){
+                re2 -= 2;
+            }
+            if(gr2 > 0){
+                gr2 -= 2;
+            }
+            if(bl2 > 0){
+                bl2 -= 2;
             }
             System.out.println("just drew a rectangle...");
         }

@@ -3,13 +3,11 @@ package ProgrammingProjects.OpticalIllusions;
 import javax.swing.*;
 import java.awt.*;
 
-public class CurvingSquares extends JPanel {
+public class cone extends JPanel {
 
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        int x = 185;
-        int y = 163;
         int height = 400;
         int width = 400;
         Color purple = new Color(64, 1 , 74);
@@ -19,16 +17,16 @@ public class CurvingSquares extends JPanel {
         g.drawRect(100, 75, 175, 175);
         g.drawRect(50, 25, 275, 275);
         g.setColor(gray);
-        for(int i = 1; i < width + 150; i += 10){
-            g.drawOval(x - (i/2),y - (i/2), i, i);
+        for(int i = 1; i < width; i += 10){
+            g.drawOval(0, 0, i, i);
         }
     }
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("CurvingSquares");
+        JFrame frame = new JFrame("cone");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 400);
-        frame.add(new CurvingSquares());
+        frame.add(new cone());
         frame.setVisible(true);
     }
 }
