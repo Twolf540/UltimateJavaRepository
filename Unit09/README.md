@@ -208,3 +208,23 @@ public String toString(){
 }
 ```
 ### 9_7 P2
+The object class has a .equals method
+
+equals can be overridden in a class to check different things
+
+ex:
+```java
+public class WritingUtensil(){
+    private int tipSize;
+    public WritingUtensil(int pixels){
+        tipSize = pixels;
+    }
+    public boolean equals(Object other){
+        if(!(other.instanceOf WritingUtensil)){
+            return false;
+        }
+        WritingUtensil that = (WritingUtensil) other;
+        return this.tipSize == that.tipSize;
+    }
+}
+```
