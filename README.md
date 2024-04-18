@@ -107,6 +107,11 @@
 - [9.6 - Polymorphism](Unit09/Topic9_6Polymorphism.java)
 - [9.7 - Object Superclass](Unit09/Topic9_7ObjectSuperclass.java)
 
+### [Unit 10 - Recursion](Unit10/README.md)
+
+- [10.1 - Recursion](Unit10/Topic10_1Recursion.java)
+- [10.2 - Recursive Searching and Sorting](Unit10/Topic10_2RecursiveSearchingAndSorting.java)
+
 ## Course Calendar
 
 | Mon                                                                                                                         | Tue                                                                                 | Wed                                                          | Thu                                                                                                                                                                  | Fri                                                                   |
@@ -126,7 +131,8 @@
 | **25** <br> Video on 7.7 <br> FRQs                                                                                          | **26** <br> Unit 7 MCQ Progress Check                                               | **27** <br> Unit 7 FRQ Progress Check                        | **28** <br> NO CLASS (State Assessments)                                                                                                                             | **29** <br> Videos & MCQs on 8.1                                      |
 | **1st Apr** <br> Videos & MCQs on 8.2                                                                                       | **2** <br> Unit 8 FRQs                                                              | **3** <br> Unit 8 MCQ Progress Check                         | **4** <br> Unit 8 FRQ Progress Check                                                                                                                                 | **5** <br> NO SCHOOL                                                  |
 | **8** <br> NO SCHOOL                                                                                                        | **9** <br> Videos on 9.1 <br> Videos & MCQ on 9.2                                   | **10** <br> Videos & MCQs on 9.3 <br> Videos & MCQs on 9.4   | **11** <br> Videos & MCQs on 9.5 <br> Videos & MCQs on 9.6                                                                                                           | **12** <br> Videos & MCQ on 9.7 <br> Pet FRQ                          |
-| **15** <br> Meal FRQ                                                                                                        | **16** <br> Unit 9 MCQ Progress Check                                               | **17** <br> Unit 9 FRQ Progress Check                        | **18** <br>                                                                                                                                                          | **19** <br>                                                           |
+| **15** <br> Meal FRQ                                                                                                        | **16** <br> Unit 9 MCQ Progress Check                                               | **17** <br> Unit 9 FRQ Progress Check                        | **18** <br> Videos & MCQs on 10.1                                                                                                                                    | **19** <br> Videos & MCQs on 10.2 <br> Combinatorics FRQ              |
+| **22** <br> Unit 10 MCQ & FRQ Progress Checks                                                                               | **23** <br>                                                                         | **24** <br>                                                  | **25** <br>                                                                                                                                                          | **26** <br>                                                           |
 
 ## Gradebook Categories
 
