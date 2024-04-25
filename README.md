@@ -112,6 +112,19 @@
 - [10.1 - Recursion](Unit10/Topic10_1Recursion.java)
 - [10.2 - Recursive Searching and Sorting](Unit10/Topic10_2RecursiveSearchingAndSorting.java)
 
+### Exam Review
+
+- Looking at missed questions from the 2015 Practice test
+- Looking back at old progress checks
+
+Additional new resources:
+
+- 8 "Practice Session" videos (10-15m each) are available on AP Classroom. Each one unpacks sample MCQ/FRQ questions.
+- Past FRQ exam sections from 1999-2023 are available on the [College Board's Website](https://apcentral.collegeboard.org/courses/ap-computer-science-a/exam/past-exam-questions)
+- 2014 Practice Test
+
+Let me know if there's anything else that would be helpful!
+
 ## Course Calendar
 
 | Mon                                                                                                                         | Tue                                                                                 | Wed                                                          | Thu                                                                                                                                                                  | Fri                                                                   |
@@ -132,7 +145,9 @@
 | **1st Apr** <br> Videos & MCQs on 8.2                                                                                       | **2** <br> Unit 8 FRQs                                                              | **3** <br> Unit 8 MCQ Progress Check                         | **4** <br> Unit 8 FRQ Progress Check                                                                                                                                 | **5** <br> NO SCHOOL                                                  |
 | **8** <br> NO SCHOOL                                                                                                        | **9** <br> Videos on 9.1 <br> Videos & MCQ on 9.2                                   | **10** <br> Videos & MCQs on 9.3 <br> Videos & MCQs on 9.4   | **11** <br> Videos & MCQs on 9.5 <br> Videos & MCQs on 9.6                                                                                                           | **12** <br> Videos & MCQ on 9.7 <br> Pet FRQ                          |
 | **15** <br> Meal FRQ                                                                                                        | **16** <br> Unit 9 MCQ Progress Check                                               | **17** <br> Unit 9 FRQ Progress Check                        | **18** <br> Videos & MCQs on 10.1                                                                                                                                    | **19** <br> Videos & MCQs on 10.2 <br> Combinatorics FRQ              |
-| **22** <br> Unit 10 MCQ & FRQ Progress Checks                                                                               | **23** <br>                                                                         | **24** <br>                                                  | **25** <br>                                                                                                                                                          | **26** <br>                                                           |
+| **22** <br> Unit 10 MCQ & FRQ Progress Checks                                                                               | **23** <br> 2015 Practice Test MCQ                                                  | **24** <br> 2015 Practice Test FRQ                           | **25** <br> Self Study                                                                                                                                               | **26** <br> NO SCHOOL                                                 |
+| **29** <br> Self Study                                                                                                      | **30** <br> Self Study                                                              | **1st May** <br> Self Study                                  | **2** <br> 2020 Practice Test MCQ                                                                                                                                    | **3** <br> 2020 Practice Test FRQ                                     |
+| **6** <br> Self Study                                                                                                       | **7** <br> Self Study                                                               | **8** <br> Self Study <br> AP Exam noon-3:30pm               | **9** <br>                                                                                                                                                           | **10** <br>                                                           |
 
 ## Gradebook Categories
 
