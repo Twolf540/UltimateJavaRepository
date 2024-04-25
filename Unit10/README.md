@@ -111,6 +111,7 @@ Merge Sort - Sorts the values on the left half and right half of the list sepera
 
 The rest of the video was just explaining the merge sort. No code.
 ### 10_2 P3
+**real mergeSort is in ScislowskiMerge.java**
 ```java
 public void merge(int [] myArray, int low, int high, int middle){
     int [] sortedArray = [high - low];
