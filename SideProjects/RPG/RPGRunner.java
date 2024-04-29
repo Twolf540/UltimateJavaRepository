@@ -18,6 +18,9 @@ public class RPGRunner{
         }
         System.out.println("You have " + ex.getHP() + " HP");
         System.out.println("Your enemy has " + exen.getHP() + " HP");
-        RPG.playerTurn(ex, exen, "normal attack");
+        System.out.println("What kind of move would you liek to make?");
+        String move = scan.next();
+        RPG.playerTurn(ex, exen, "normal");
+        RPG.playerTurn(ex, exen, move);
     }
 }
