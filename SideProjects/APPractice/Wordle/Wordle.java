@@ -14,6 +14,7 @@ public class Wordle {
         Scanner scan = new Scanner(System.in);
         String temp = "";
         int guesscount = 0;
+        boolean fail = true;
         for(int i = 0; i < guesses; i++){
             System.out.println("What is your guess?");
             String temp2 = scan.next();
@@ -35,17 +36,29 @@ public class Wordle {
                     }
                 }
             }
+            System.out.println("---------");
             for(int z = 0; z < temp.length(); z += length){
-                System.out.println(temp.substring(z, z + length));
+                System.out.println("| " + temp.substring(z, z + length) + " |");
             }
+            System.out.println("---------");
             if(temp.substring(temp.length() - length, temp.length()).equals(word)){
                 i = guesses;
+                fail = false;
                 System.out.println("Congratulations! You took " + guesscount + " guesses");
             }
-            }
+        }
+        if(fail){
+            System.out.println("You have run out of guesses. The word was " + word + ".");
+        }
     }
     public static void main(String[] args) {
-        Wordle w = new Wordle("quote", 5);
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter your word");
+        String chosenWord = s.next();
+        for(int i=0; i < 15; i++){
+            System.out.println("[----------]");
+        }
+        Wordle w = new Wordle(chosenWord, 5);
         w.guess();
     }
 }
