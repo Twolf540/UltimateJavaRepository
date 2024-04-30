@@ -9,7 +9,7 @@ public class TicTacToe {
         board = new String[3][3];
         for (int r = 0; r < 3; r++) {
             for (int c = 0; c < 3; c++) {
-                board[r][c] = "[]";
+                board[r][c] = "E";
             }
         }
     }
@@ -17,7 +17,7 @@ public class TicTacToe {
     public void printBoard() {
         for (int r = 0; r < 3; r++) {
             if (r == 0) {
-                System.out.println("----------");
+                System.out.println("-------");
             }
             for (int c = 0; c < 3; c++) {
                 if (c == 0) {
@@ -26,7 +26,7 @@ public class TicTacToe {
                     System.out.print(board[r][c] + "|");
                 }
             }
-            System.out.println("\n----------");
+            System.out.println("\n-------");
         }
     }
 
@@ -97,7 +97,7 @@ public class TicTacToe {
                 int row = Integer.parseInt(s.next());
                 System.out.println("Which column?");
                 int col = Integer.parseInt(s.next());
-                if (board[row][col].equals("[]")) {
+                if (board[row][col].equals("E")) {
                     board[row][col] = "O";
                     playerMove = false;
                 } else {
@@ -109,7 +109,7 @@ public class TicTacToe {
             System.out.println("test");
             for (int r = 0; r < 3; r++) {
                 for (int c = 0; c < 3; c++) {
-                    if (board[r][c].equals("[]")) {
+                    if (board[r][c].equals("E")) {
                         count++;
                     }
                 }
@@ -122,7 +122,7 @@ public class TicTacToe {
             while (botMove) {
                 int botRow = (int) ((Math.random() * 3));
                 int botCol = (int) ((Math.random() * 3));
-                if (board[botRow][botCol].equals("[]")) {
+                if (board[botRow][botCol].equals("E")) {
                     board[botRow][botCol] = "X";
                     botMove = false;
                 }
