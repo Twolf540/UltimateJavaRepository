@@ -128,9 +128,11 @@ public class TicTacToe {
                 }
             }
             if (this.playerWin()) {
+                this.printBoard();
                 System.out.println("You won!");
                 notFull = false;
             } else if (this.botWin()) {
+                this.printBoard();
                 System.out.println("The bot won.");
                 notFull = false;
             }
