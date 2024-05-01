@@ -21,7 +21,7 @@ public class RPGEnemy{
         }
         if(t == "Orc"){
             name = ("Orc" + (goblinCount + 1));
-            HP = (int)((Math.random()*25)+10);
+            HP = (int)((Math.random()*61)+40);
             ATK = (int)((Math.random()*25)+10);
             DEF = (int)((Math.random()*25)+10);
             orcCount++;

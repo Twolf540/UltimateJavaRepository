@@ -20,7 +20,7 @@ public class RPG{
         enRoll = (int)((Math.random()*20) + 1);
         String attackType = t;
         //seperates the two attack types
-        if(attackType == "normal"){
+        if(attackType.equals("normal")){
             /*checks to see if the roll was succesful.
             Reduces enemy/character HP based on the result and then prints out that HP change and the object's new HP\
             If either you or the enemy was reduced to 0 or less HP, prints out a defeat message*/
@@ -43,7 +43,7 @@ public class RPG{
                 }
             }
         }
-        if(attackType == "skill"){
+        if(attackType.equals("skill")){
                         /*checks to see if the roll was succesful.
             Reduces enemy/character HP based on the result and then prints out that HP change and the object's new HP*/
             if(chRoll >= 10){
@@ -61,7 +61,7 @@ public class RPG{
                 ch.spChange(2);
             }
         }
-        if(attackType == "defend"){
+        if(attackType.equals("defend")){
             /*checks to see if the roll was succesful.
             If the roll succeeded, rolls another die to check to see whether the player gets hit or counterattacks. 
             If the second roll succeeds, you get hit for reduced HP. If the initial player roll fails, the player is attack normally by the enemy*/
@@ -96,7 +96,7 @@ public class RPG{
                 }
             }
         }
-        if(attackType == "special defend"){
+        if(attackType.equals("special defend")){
             /*checks to see if the roll was succesful.
             Reduces enemy/character HP based on the result and then prints out that HP change and the object's new HP\
             If either you or the enemy was reduced to 0 or less HP, prints out a defeat message*/
@@ -133,12 +133,5 @@ public class RPG{
                 ch.spChange(2);
             }
         }
-    }
-    public static void main(String[] args) {
-        RPGCharacter ex = new RPGCharacter("ex","Swordsman");
-        RPGEnemy exen = new RPGEnemy("Goblin");
-        System.out.println(ex.getName() + " has " + ex.getHP() + " HP");
-        System.out.println(exen.getName()+ " has " + exen.getHP() + " HP");
-        RPG.playerTurn(ex, exen, "normal");
     }
 }
