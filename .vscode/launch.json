@@ -132,14 +132,6 @@
         },
         {
             "type": "java",
-            "name": "JavaFX",
-            "request": "launch",
-            "mainClass": "SideProjects.RPG.JavaFX",
-            "projectName": "UltimateJavaRepository_970e5585",
-            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
-        },
-        {
-            "type": "java",
             "name": "RPGGUI",
             "request": "launch",
             "mainClass": "SideProjects.RPG.RPGGUI",

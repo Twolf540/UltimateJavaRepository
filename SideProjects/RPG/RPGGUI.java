@@ -1,27 +1,36 @@
 package SideProjects.RPG;
-import java.awt.BorderLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JTextArea;
-public class RPGGUI {
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+public class RPGGUI extends Application {
+
+    @Override
+    public void start(Stage primaryStage) {
+        // Create a label for character name
+        Label nameLabel = new Label("Enter your character name:");
+
+        // Create a text field for character name input
+        TextField nameInput = new TextField();
+
+        // Create a VBox layout to hold the components
+        VBox vbox = new VBox(10); // 10 pixels spacing
+        vbox.setPadding(new Insets(20)); // 20 pixels padding
+        vbox.getChildren().addAll(nameLabel, nameInput);
+
+        // Create a scene and set it on the stage
+        Scene scene = new Scene(vbox, 300, 150); // Width, Height
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("Simple RPG");
+        primaryStage.show();
+    }
+
     public static void main(String[] args) {
-        JFrame f = new JFrame("A JFrame");
-        f.setSize(250,250);
-        f.setLocation(300,200);
-        final JTextArea textArea = new JTextArea(10,40);
-        f.getContentPane().add(BorderLayout.CENTER, textArea);
-        final JButton button = new JButton("Click Me");
-        
-        f.getContentPane().add(BorderLayout.SOUTH, button);
-        button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e){
-                textArea.append("Button was clicked\n");
-            }
-        });
-    f.setVisible(true);
+        launch(args);
     }
 }
