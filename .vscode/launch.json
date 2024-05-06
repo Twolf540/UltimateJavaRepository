@@ -1,0 +1,639 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "CafeWall",
+            "request": "launch",
+            "mainClass": "ProgrammingProjects.OpticalIllusions.CafeWall",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "CurvingSquares",
+            "request": "launch",
+            "mainClass": "ProgrammingProjects.OpticalIllusions.CurvingSquares",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "DrawingDemo",
+            "request": "launch",
+            "mainClass": "ProgrammingProjects.OpticalIllusions.DrawingDemo",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "EisensteinIllusion",
+            "request": "launch",
+            "mainClass": "ProgrammingProjects.OpticalIllusions.EisensteinIllusion",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "GradientIllusion",
+            "request": "launch",
+            "mainClass": "ProgrammingProjects.OpticalIllusions.GradientIllusion",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "HeringIllusion",
+            "request": "launch",
+            "mainClass": "ProgrammingProjects.OpticalIllusions.HeringIllusion",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "HermannScintillatingGrid",
+            "request": "launch",
+            "mainClass": "ProgrammingProjects.OpticalIllusions.HermannScintillatingGrid",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "LeviantEnigma",
+            "request": "launch",
+            "mainClass": "ProgrammingProjects.OpticalIllusions.LeviantEnigma",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "cone",
+            "request": "launch",
+            "mainClass": "ProgrammingProjects.OpticalIllusions.cone",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "ChooseFont",
+            "request": "launch",
+            "mainClass": "ProgrammingProjects.TextSimilarity.ChooseFont",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "GettingStarted",
+            "request": "launch",
+            "mainClass": "ProgrammingProjects.TextSimilarity.GettingStarted",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "UsingDictionary",
+            "request": "launch",
+            "mainClass": "ProgrammingProjects.TextSimilarity.UsingDictionary",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "ScislowskiMerge",
+            "request": "launch",
+            "mainClass": "ScislowskiMerge",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "TicTacToe",
+            "request": "launch",
+            "mainClass": "SideProjects.APPractice.TicTacToe.TicTacToe",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Wordle",
+            "request": "launch",
+            "mainClass": "SideProjects.APPractice.Wordle.Wordle",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Calculator",
+            "request": "launch",
+            "mainClass": "SideProjects.Calculator",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "NewMaxMinRunner",
+            "request": "launch",
+            "mainClass": "SideProjects.NewMaxMinRunner",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "JavaFX",
+            "request": "launch",
+            "mainClass": "SideProjects.RPG.JavaFX",
+            "projectName": "UltimateJavaRepository_970e5585",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "RPGGUI",
+            "request": "launch",
+            "mainClass": "SideProjects.RPG.RPGGUI",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "RPGRunner",
+            "request": "launch",
+            "mainClass": "SideProjects.RPG.RPGRunner",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "testFRQ",
+            "request": "launch",
+            "mainClass": "SideProjects.testFRQ",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Unit01.Notes.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "Unit01.Topic1_1.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(2)",
+            "request": "launch",
+            "mainClass": "Unit01.Topic1_2.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(3)",
+            "request": "launch",
+            "mainClass": "Unit01.Topic1_3.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(4)",
+            "request": "launch",
+            "mainClass": "Unit01.Topic1_4.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(5)",
+            "request": "launch",
+            "mainClass": "Unit01.Topic1_5.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "DistanceFormula",
+            "request": "launch",
+            "mainClass": "Unit01.Xtras.DistanceFormula",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "RandomInt",
+            "request": "launch",
+            "mainClass": "Unit01.Xtras.RandomInt",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "RandomStats",
+            "request": "launch",
+            "mainClass": "Unit01.Xtras.RandomStats",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "TrigIdentity",
+            "request": "launch",
+            "mainClass": "Unit01.Xtras.TrigIdentity",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "TwoDSix",
+            "request": "launch",
+            "mainClass": "Unit01.Xtras.TwoDSix",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(6)",
+            "request": "launch",
+            "mainClass": "Unit02.Topic2_1.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(7)",
+            "request": "launch",
+            "mainClass": "Unit02.Topic2_2.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "School",
+            "request": "launch",
+            "mainClass": "Unit02.Topic2_2.School",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Letter",
+            "request": "launch",
+            "mainClass": "Unit02.Topic2_3.Letter",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(8)",
+            "request": "launch",
+            "mainClass": "Unit02.Topic2_3.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Something",
+            "request": "launch",
+            "mainClass": "Unit02.Topic2_3.Something",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(9)",
+            "request": "launch",
+            "mainClass": "Unit02.Topic2_4.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(10)",
+            "request": "launch",
+            "mainClass": "Unit02.Topic2_5.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(11)",
+            "request": "launch",
+            "mainClass": "Unit02.Topic2_6.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(12)",
+            "request": "launch",
+            "mainClass": "Unit02.Topic2_7.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(13)",
+            "request": "launch",
+            "mainClass": "Unit02.Topic2_8.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(14)",
+            "request": "launch",
+            "mainClass": "Unit02.Topic2_9.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "StringMethods",
+            "request": "launch",
+            "mainClass": "Unit02.UnitPractice.StringMethods",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(15)",
+            "request": "launch",
+            "mainClass": "Unit03.Topic3_1.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "MagpieRunner",
+            "request": "launch",
+            "mainClass": "Unit03.Topic3_2.MagpieRunner",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(16)",
+            "request": "launch",
+            "mainClass": "Unit03.Topic3_2.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(17)",
+            "request": "launch",
+            "mainClass": "Unit03.Topic3_3.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(18)",
+            "request": "launch",
+            "mainClass": "Unit03.Topic3_4.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(19)",
+            "request": "launch",
+            "mainClass": "Unit03.Topic3_5.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(20)",
+            "request": "launch",
+            "mainClass": "Unit03.Topic3_6.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Main(21)",
+            "request": "launch",
+            "mainClass": "Unit03.Topic3_7.Main",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "BasicTextAnalysis",
+            "request": "launch",
+            "mainClass": "Unit03.Xtras.BasicTextAnalysis",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "DiscordTagGenerator",
+            "request": "launch",
+            "mainClass": "Unit03.Xtras.DiscordTagGenerator",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "QuadraticSolver",
+            "request": "launch",
+            "mainClass": "Unit03.Xtras.QuadraticSolver",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "ScannerDemo",
+            "request": "launch",
+            "mainClass": "Unit03.Xtras.ScannerDemo",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "StringLoops",
+            "request": "launch",
+            "mainClass": "Unit04.StringLoops",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic4_1WhileLoops",
+            "request": "launch",
+            "mainClass": "Unit04.Topic4_1WhileLoops",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic4_2ForLoops",
+            "request": "launch",
+            "mainClass": "Unit04.Topic4_2ForLoops",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic4_3AlgorithmsUsingStrings",
+            "request": "launch",
+            "mainClass": "Unit04.Topic4_3AlgorithmsUsingStrings",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic4_4NestedIteration",
+            "request": "launch",
+            "mainClass": "Unit04.Topic4_4NestedIteration",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic4_5InformalCodeAnalysis",
+            "request": "launch",
+            "mainClass": "Unit04.Topic4_5InformalCodeAnalysis",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic5_10EthicalAndSocialImplicationsOfComputingSystems",
+            "request": "launch",
+            "mainClass": "Unit05.Topic5_10EthicalAndSocialImplicationsOfComputingSystems",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic5_1AnatomyOfClass",
+            "request": "launch",
+            "mainClass": "Unit05.Topic5_1AnatomyOfClass",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic5_2Constructors",
+            "request": "launch",
+            "mainClass": "Unit05.Topic5_2Constructors",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic5_3DocumentationWithComments",
+            "request": "launch",
+            "mainClass": "Unit05.Topic5_3DocumentationWithComments",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic5_4AccessorMethods",
+            "request": "launch",
+            "mainClass": "Unit05.Topic5_4AccessorMethods",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic5_5MutatorMethods",
+            "request": "launch",
+            "mainClass": "Unit05.Topic5_5MutatorMethods",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic5_6WritingMethods",
+            "request": "launch",
+            "mainClass": "Unit05.Topic5_6WritingMethods",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic5_7StaticVariablesAndMethods",
+            "request": "launch",
+            "mainClass": "Unit05.Topic5_7StaticVariablesAndMethods",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic5_8ScopeAndAccess",
+            "request": "launch",
+            "mainClass": "Unit05.Topic5_8ScopeAndAccess",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic5_9ThisKeyword",
+            "request": "launch",
+            "mainClass": "Unit05.Topic5_9ThisKeyword",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic6_1ArrayCreationAndAccess",
+            "request": "launch",
+            "mainClass": "Unit06.Topic6_1ArrayCreationAndAccess",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic6_2TraversingArrays",
+            "request": "launch",
+            "mainClass": "Unit06.Topic6_2TraversingArrays",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic6_3EnhancedForLoopForArrays",
+            "request": "launch",
+            "mainClass": "Unit06.Topic6_3EnhancedForLoopForArrays",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic6_4DevelopingAlgorithmsUsingArrays",
+            "request": "launch",
+            "mainClass": "Unit06.Topic6_4DevelopingAlgorithmsUsingArrays",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic7_2ArrayListMethods",
+            "request": "launch",
+            "mainClass": "Unit07.Topic7_2ArrayListMethods",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic8_1_2DArrays",
+            "request": "launch",
+            "mainClass": "Unit08.Topic8_1_2DArrays",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic8_2Traversing2DArrays",
+            "request": "launch",
+            "mainClass": "Unit08.Topic8_2Traversing2DArrays",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic9_1CreatingSuperclassesAndSubclasses",
+            "request": "launch",
+            "mainClass": "Unit09.Topic9_1CreatingSuperclassesAndSubclasses",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic9_2WritingConstructorsForSubclasses",
+            "request": "launch",
+            "mainClass": "Unit09.Topic9_2WritingConstructorsForSubclasses",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic9_3OverridingMethods",
+            "request": "launch",
+            "mainClass": "Unit09.Topic9_3OverridingMethods",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic9_4SuperKeyword",
+            "request": "launch",
+            "mainClass": "Unit09.Topic9_4SuperKeyword",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic9_5CreatingReferencesUsingInheritanceHierarchies",
+            "request": "launch",
+            "mainClass": "Unit09.Topic9_5CreatingReferencesUsingInheritanceHierarchies",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic9_6Polymorphism",
+            "request": "launch",
+            "mainClass": "Unit09.Topic9_6Polymorphism",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic9_7ObjectSuperclass",
+            "request": "launch",
+            "mainClass": "Unit09.Topic9_7ObjectSuperclass",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic10_1Recursion",
+            "request": "launch",
+            "mainClass": "Unit10.Topic10_1Recursion",
+            "projectName": "UltimateJavaRepository_970e5585"
+        },
+        {
+            "type": "java",
+            "name": "Topic10_2RecursiveSearchingAndSorting",
+            "request": "launch",
+            "mainClass": "Unit10.Topic10_2RecursiveSearchingAndSorting",
+            "projectName": "UltimateJavaRepository_970e5585"
+        }
+    ]
+}
