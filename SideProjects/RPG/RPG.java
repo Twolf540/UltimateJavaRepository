@@ -20,7 +20,7 @@ public class RPG{
         enRoll = (int)((Math.random()*20) + 1);
         String attackType = t;
         //seperates the two attack types
-        if(attackType.equals("normal")){
+        if(attackType.equals("Normal")){
             /*checks to see if the roll was succesful.
             Reduces enemy/character HP based on the result and then prints out that HP change and the object's new HP\
             If either you or the enemy was reduced to 0 or less HP, prints out a defeat message*/
@@ -43,7 +43,7 @@ public class RPG{
                 }
             }
         }
-        if(attackType.equals("skill")){
+        if(attackType.equals("Skill")){
                         /*checks to see if the roll was succesful.
             Reduces enemy/character HP based on the result and then prints out that HP change and the object's new HP*/
             if(chRoll >= 10){
@@ -61,7 +61,7 @@ public class RPG{
                 ch.spChange(2);
             }
         }
-        if(attackType.equals("defend")){
+        if(attackType.equals("Defend")){
             /*checks to see if the roll was succesful.
             If the roll succeeded, rolls another die to check to see whether the player gets hit or counterattacks. 
             If the second roll succeeds, you get hit for reduced HP. If the initial player roll fails, the player is attack normally by the enemy*/

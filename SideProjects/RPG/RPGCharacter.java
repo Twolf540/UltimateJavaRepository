@@ -47,4 +47,9 @@ public class RPGCharacter{
     public void spChange(int d){
         SP -= d;
     }
+    public void printInfo(){
+        System.out.println(name);
+        System.out.println(classCh);
+        System.out.println("HP: " + HP + ", ATK: " + ATK + ", DEF: " + DEF);
+    }
 }
