@@ -3,9 +3,9 @@ package SideProjects.RPG;
 public class RPGCharacter{
     //stats for the character
     private int HP;
-    private int SP;
-    private int ATK;
     private int DEF;
+    private int ATK;
+    private int SP;
     private String name;
     private String classCh;
     // Creates a character w/ a name, class, SP, and randomly assigned values for ATK, DEf, HP, and MP based on the class
@@ -29,17 +29,20 @@ public class RPGCharacter{
     public int getHP(){
         return HP;
     }
-    public int getSP(){
-        return SP;
+    public int getDEF(){
+        return DEF;
     }
     public int getATK(){
         return ATK;
     }
-    public int getDEF(){
-        return DEF;
+    public int getSP(){
+        return SP;
     }
     public String getName(){
         return name;
+    }
+    public String getClassCh(){
+        return classCh;
     }
     public void hpChange(int d){
         HP -= d;
@@ -47,9 +50,13 @@ public class RPGCharacter{
     public void spChange(int d){
         SP -= d;
     }
+    public boolean alive(){
+        return this.HP > 0;
+    }
     public void printInfo(){
         System.out.println(name);
         System.out.println(classCh);
         System.out.println("HP: " + HP + ", ATK: " + ATK + ", DEF: " + DEF);
     }
+
 }

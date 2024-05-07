@@ -2,8 +2,8 @@ package SideProjects.RPG;
 public class RPGEnemy{
     //stats for the enemy
     private int HP;
-    private int ATK;
     private int DEF;
+    private int ATK;
     private String name;
     private String type;
     private static int goblinCount = 0;
@@ -39,7 +39,13 @@ public class RPGEnemy{
     public String getName(){
         return name;
     }
+    public String getType(){
+        return type;
+    }
     public void hpChange(int d){
         HP -= d;
+    }
+    public boolean alive(){
+        return this.HP > 0;
     }
 }

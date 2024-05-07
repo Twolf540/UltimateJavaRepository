@@ -10,8 +10,6 @@ import javafx.stage.Stage;
 public class RPGGUI extends Application {
     private RPGCharacter ex;
     private RPGEnemy exen;
-    private int countA;
-
 
     @Override
     public void start(Stage primaryStage) {
@@ -33,11 +31,7 @@ public class RPGGUI extends Application {
             exen = new RPGEnemy("Goblin");        
             System.out.println("You have " + ex.getHP() + " HP");
             System.out.println("Your enemy has " + exen.getHP() + " HP");
-            while(ex.getHP() > 0 && exen.getHP() > 0){
-                if(countA == 0){
-                    showMoveSelection(name);
-                }
-            }
+            showMoveSelection(name);
         });
 
         // Create layout
@@ -60,7 +54,7 @@ public class RPGGUI extends Application {
         primaryStage.show();
     }
 
-    private void showMoveSelection(String characterName) {
+    public void showMoveSelection(String characterName) {
         Stage moveStage = new Stage();
         moveStage.setTitle("Select Move");
         
@@ -77,17 +71,15 @@ public class RPGGUI extends Application {
         // Create submit button
         Button submitButton = new Button("Submit");
         submitButton.setOnAction(e -> {
-            countA++;
-            RadioButton selectedButton = (RadioButton) toggleGroup.getSelectedToggle();
-            if (selectedButton != null) {
-                String move = selectedButton.getText();
-                System.out.println(characterName + " chose to " + move + ".");
-                RPG.playerTurn(ex, exen, move);
-                countA--;
-                moveStage.close();
-            } else {
-                System.out.println("Please select a move.");
-            }
+        RadioButton selectedButton = (RadioButton) toggleGroup.getSelectedToggle();
+        if (selectedButton != null) {
+            String move = selectedButton.getText();
+            System.out.println(characterName + " chose to " + move + ".");
+            RPG.playerTurn(ex, exen, move);
+            moveStage.close();
+        } else {
+            System.out.println("Please select a move.");
+        }
         });
 
         // Create layout
@@ -108,6 +100,10 @@ public class RPGGUI extends Application {
         moveStage.show();
     }
 
+
+    public void createCharacter() {
+        
+    }
     public static void main(String[] args) {
         launch(args);
     }
