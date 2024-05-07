@@ -145,8 +145,5 @@ public class RPG{
                 System.out.println("You do not have enough skill points. Please choose another move.");
             }
         }
-        if(ch.alive() && en.alive()){
-            RPGGUI.showMoveSelection(ch.getName());
-        }
     }
 }
