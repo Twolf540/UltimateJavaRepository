@@ -85,9 +85,9 @@ public class RPG{
                     int tempHP = en.getHP();
                     en.hpChange(((int)(en.getDEF())/10)*(ch.getATK() + 10));
                     if(en.getHP() <= 0){
-                        return (ch.getName() + "'s defense suceeded. " + en.getName() + "'s attack failed. " + ch.getName() + " counterattacks. " + en.getName()+" lost "+(tempHP-en.getHP())+" HP. " + ch.getName() + " defeated " + en.getName());
+                        return (ch.getName() + "'s defense suceeded. " + en.getName() + "'s attack failed. " + ch.getName() + " counterattacks.\n" +  en.getName()+" lost "+(tempHP-en.getHP())+" HP. " + ch.getName() + " defeated " + en.getName());
                     }
-                    return (ch.getName() + "'s defense suceeded. " + en.getName() + "'s attack failed. " + ch.getName() + " counterattacks. " + en.getName()+" lost "+(tempHP-en.getHP())+" HP.");
+                    return (ch.getName() + "'s defense suceeded. " + en.getName() + "'s attack failed. " + ch.getName() + " counterattacks.\n" + en.getName()+" lost "+(tempHP-en.getHP())+" HP.");
 
                 }
             }
@@ -122,9 +122,9 @@ public class RPG{
                         ch.spChange(2);
                         skillPoints-=2;
                         if(en.getHP() <= 0){
-                            return (ch.getName() + "'s defense suceeded. " + en.getName() + "'s attack failed. " + ch.getName() + " counterattacks. " + en.getName()+" lost "+(tempHP-en.getHP())+" HP. " + ch.getName() + " defeated " + en.getName());
+                            return (ch.getName() + "'s defense suceeded. " + en.getName() + "'s attack failed. " + ch.getName() + " counterattacks.\n" + en.getName()+" lost "+(tempHP-en.getHP())+" HP. " + ch.getName() + " defeated " + en.getName());
                         }
-                        return (ch.getName() + "'s defense suceeded. " + en.getName() + "'s attack failed. " + ch.getName() + " counterattacks. " + en.getName()+" lost "+(tempHP-en.getHP())+" HP.");
+                        return (ch.getName() + "'s defense suceeded. " + en.getName() + "'s attack failed. " + ch.getName() + " counterattacks.\n" + en.getName()+" lost "+(tempHP-en.getHP())+" HP.");
                     }
                 }
                 else{

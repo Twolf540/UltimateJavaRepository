@@ -8,6 +8,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import javafx.scene.text.*;
 public class RPGGUI extends Application {
     private static RPGCharacter ex;
     private static RPGEnemy exen;
@@ -38,7 +39,50 @@ public class RPGGUI extends Application {
     public void start(Stage primaryStage) {
         doNext(primaryStage);
         createCharacter(primaryStage);
-    
+    }
+
+    public static void createCharacter(Stage primaryStage) {
+        // Create labels
+        Label nameLabel = new Label("Name:");
+        Label classLabel = new Label("Class:");
+
+        // Create text fields
+        TextField nameField = new TextField();
+        TextField classField = new TextField();
+
+        // Create layout
+        GridPane gridPane = new GridPane();
+        gridPane.setPadding(new Insets(10));
+        gridPane.setHgap(10);
+        gridPane.setVgap(5);
+
+        // Create submit button
+        Button submitButton = new Button("Create Character");
+        submitButton.setOnAction(e -> {
+            String name = nameField.getText();
+            String characterClass = classField.getText();
+            ex = new RPGCharacter(name, characterClass);
+            ex.printInfo();
+            exen = new RPGEnemy("Goblin");
+            primaryStage.close();        
+            doNext(primaryStage);
+        });
+
+        // Add components to layout
+        gridPane.add(nameLabel, 0, 0);
+        gridPane.add(nameField, 1, 0);
+        gridPane.add(classLabel, 0, 1);
+        gridPane.add(classField, 1, 1);
+        gridPane.add(submitButton, 0, 2, 2, 1);
+
+        // Set scene
+        Scene scene = new Scene(gridPane, 300, 150);
+        primaryStage.setTitle("RPG Character Creator");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+
+
+
     }
 
     public static void showMoveSelection() {
@@ -87,51 +131,6 @@ public class RPGGUI extends Application {
         moveStage.show();
     }
 
-
-    public static void createCharacter(Stage primaryStage) {
-        // Create labels
-        Label nameLabel = new Label("Name:");
-        Label classLabel = new Label("Class:");
-
-        // Create text fields
-        TextField nameField = new TextField();
-        TextField classField = new TextField();
-
-        // Create layout
-        GridPane gridPane = new GridPane();
-        gridPane.setPadding(new Insets(10));
-        gridPane.setHgap(10);
-        gridPane.setVgap(5);
-
-        // Create submit button
-        Button submitButton = new Button("Create Character");
-        submitButton.setOnAction(e -> {
-            String name = nameField.getText();
-            String characterClass = classField.getText();
-            ex = new RPGCharacter(name, characterClass);
-            ex.printInfo();
-            exen = new RPGEnemy("Goblin");
-            primaryStage.close();        
-            doNext(primaryStage);
-        });
-
-        // Add components to layout
-        gridPane.add(nameLabel, 0, 0);
-        gridPane.add(nameField, 1, 0);
-        gridPane.add(classLabel, 0, 1);
-        gridPane.add(classField, 1, 1);
-        gridPane.add(submitButton, 0, 2, 2, 1);
-
-        // Set scene
-        Scene scene = new Scene(gridPane, 300, 150);
-        primaryStage.setTitle("RPG Character Creator");
-        primaryStage.setScene(scene);
-        primaryStage.show();
-
-
-
-    }
-
     public static void doFight(Stage primaryStage) {
         System.out.println("You have " + ex.getHP() + " HP");
         System.out.println("Your enemy has " + exen.getHP() + " HP");
@@ -141,7 +140,7 @@ public class RPGGUI extends Application {
     }
     public static void displayFightDetails(Stage secondaryStage, String move) {
         fightText = RPG.playerTurn(ex, exen, move);
-        Label t = new Label(fightText);
+        Text t2 = new Text(10,5,fightText);
         
         GridPane g = new GridPane();
         g.setPadding(new Insets(10));
@@ -160,8 +159,8 @@ public class RPGGUI extends Application {
             secondaryStage.close();
         });
         // Center the button at the bottom
-        g.add(t, 0, 0);
-        g.add(nextButton, 15, 49);
+        g.add(t2, 0, 0);
+        g.add(nextButton, 0, 49);
         // Create scene
         Scene scene = new Scene(g, 400, 300);
         secondaryStage.setTitle("Outcome");
