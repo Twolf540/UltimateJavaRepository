@@ -1,4 +1,4 @@
-v\package SideProjects.RPG;
+package SideProjects.RPG;
 
 public class RPG2{
     public static int NORMAL_ATTACK = 1;
@@ -13,7 +13,7 @@ public class RPG2{
     private static int chRoll = 0;
     private static int enRoll = 0;
     //method that takes a character and a targeted enemy and uses a roll to determine whether an attack succeeds.
-    public static void playerTurn(RPGCharacter ch, RPGEnemy en, String t){
+    public static String playerTurn(RPGCharacter ch, RPGEnemy en, String t){
         //gets the neccesary variables to do an attack
         int skillPoints = ch.getSP();
         chRoll = (int)((Math.random()*20) + 1);
