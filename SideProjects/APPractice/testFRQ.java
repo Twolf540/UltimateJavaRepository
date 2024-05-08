@@ -1,4 +1,4 @@
-package SideProjects;
+package SideProjects.APPractice;
 
 public class testFRQ {
     public static void longestStreak(String str){

@@ -1,4 +1,4 @@
-package SideProjects;
+package SideProjects.APPractice;
 
 public class NewMaxMinRunner {
     public static void main(String[] args) {

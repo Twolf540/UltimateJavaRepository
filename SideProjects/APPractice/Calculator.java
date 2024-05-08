@@ -1,4 +1,4 @@
-package SideProjects;
+package SideProjects.APPractice;
 
 import java.util.Scanner;
 

@@ -8,17 +8,19 @@ import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
-
 public class RPGGUI extends Application {
-    private RPGCharacter ex;
-    private RPGEnemy exen;
+    private static RPGCharacter ex;
+    private static RPGEnemy exen;
 
-    private int currentStage = 0;
-    private final int CREATE_CHARACTER = 1;
-    private final int DO_FIGHT = 2;
-    private final int VISIT_MERCHANT = 3;
+    private static int currentStage = 0;
+    private static final int CREATE_CHARACTER = 1;
+    private static final int DO_FIGHT = 2;
+    private static final int VISIT_MERCHANT = 3;
 
-    private void doNext(Stage primaryStage) {
+    private static String fightText = "test";
+    private static Stage primaryStage = new Stage();
+    private static Stage secondaryStage = new Stage();
+    private static void doNext(Stage primaryStage) {
         currentStage++;
         if (currentStage == CREATE_CHARACTER) {
             createCharacter(primaryStage);
@@ -39,7 +41,7 @@ public class RPGGUI extends Application {
     
     }
 
-    public void showMoveSelection() {
+    public static void showMoveSelection() {
         Stage moveStage = new Stage();
         moveStage.setTitle("Select Move");
         
@@ -60,7 +62,7 @@ public class RPGGUI extends Application {
         if (selectedButton != null) {
             String move = selectedButton.getText();
             System.out.println(ex.getName() + " chose to " + move + ".");
-            RPG.playerTurn(ex, exen, move);
+            RPGGUI.displayFightDetails(secondaryStage, move);
             moveStage.close();
         } else {
             System.out.println("Please select a move.");
@@ -86,7 +88,7 @@ public class RPGGUI extends Application {
     }
 
 
-    public void createCharacter(Stage primaryStage) {
+    public static void createCharacter(Stage primaryStage) {
         // Create labels
         Label nameLabel = new Label("Name:");
         Label classLabel = new Label("Class:");
@@ -130,31 +132,39 @@ public class RPGGUI extends Application {
 
     }
 
-    public void doFight(Stage primaryStage) {
+    public static void doFight(Stage primaryStage) {
         System.out.println("You have " + ex.getHP() + " HP");
         System.out.println("Your enemy has " + exen.getHP() + " HP");
-
-
         showMoveSelection();
 
             
     }
-    public void displayFightDetails(Stage secondaryStage) {
-        BorderPane root = new BorderPane();
-        // Create text field
-        TextField textField = new TextField();
+    public static void displayFightDetails(Stage secondaryStage, String move) {
+        fightText = RPG.playerTurn(ex, exen, move);
+        Label t = new Label(fightText);
+        
+        GridPane g = new GridPane();
+        g.setPadding(new Insets(10));
+        g.setHgap(10);
+        g.setVgap(5);
+        // check to see if text is null
+        if(fightText.equals(null)){
+            System.out.println("Done fighting");
+            primaryStage.close();
+            secondaryStage.close();
+        }
         // Create button
         Button nextButton = new Button("Next");
+        nextButton.setOnAction(e -> {
+            RPGGUI.doFight(primaryStage);
+            secondaryStage.close();
+        });
         // Center the button at the bottom
-        BorderPane.setAlignment(nextButton, Pos.BOTTOM_CENTER);
-        BorderPane.setAlignment(textField, Pos.CENTER);
-        // Add button to the bottom of the root pane
-        root.setBottom(nextButton);
-
+        g.add(t, 0, 0);
+        g.add(nextButton, 15, 49);
         // Create scene
-        Scene scene = new Scene(root, 400, 300);
-
-        secondaryStage.setTitle("Hidden Text Box and Next Button");
+        Scene scene = new Scene(g, 400, 300);
+        secondaryStage.setTitle("Outcome");
         secondaryStage.setScene(scene);
         secondaryStage.show();
     }

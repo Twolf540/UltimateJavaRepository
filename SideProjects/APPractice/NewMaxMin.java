@@ -1,4 +1,4 @@
-package SideProjects;
+package SideProjects.APPractice;
 
 public class NewMaxMin {
     public static int findMax(int [] values){

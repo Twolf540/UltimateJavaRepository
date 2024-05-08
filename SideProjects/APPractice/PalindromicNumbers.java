@@ -1,4 +1,4 @@
-package SideProjects;
+package SideProjects.APPractice;
 
 public class PalindromicNumbers {
     private int[] list;
